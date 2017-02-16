@@ -22,6 +22,7 @@ export default class App extends Component {
     axios.get(`https://api.github.com/search/repositories?q=${query}`)
       .then(response => {
         this.setState({
+          query: query,
           repos: response.data.items,
           loading: false
         });
@@ -44,7 +45,7 @@ export default class App extends Component {
           {
             (this.state.loading)
              ? <p>Loading...</p>
-             : <RepoList data={this.state.repos} />
+             : <div><h2>{this.state.query}</h2><RepoList data={this.state.repos} /></div>
           }          
         </div>
       </div>
