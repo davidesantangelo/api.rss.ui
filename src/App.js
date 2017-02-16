@@ -18,11 +18,11 @@ export default class App extends Component {
     this.performSearch();
   }
   
-  performSearch = (query = 'cats') => {
-    axios.get('')
+  performSearch = (query = 'web') => {
+    axios.get(`https://api.github.com/search/repositories?q=${query}`)
       .then(response => {
         this.setState({
-          repos: response.data.data,
+          repos: response.data.items,
           loading: false
         });
       })
@@ -32,7 +32,6 @@ export default class App extends Component {
   }
   
   render() { 
-    console.log(this.state.repos);
     return (
       <div>
         <div className="main-header">

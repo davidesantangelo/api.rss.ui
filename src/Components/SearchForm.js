@@ -25,7 +25,7 @@ export default class SearchForm extends Component {
                name="search" 
                ref={(input) => this.query = input}
                placeholder="Search..." />
-        <button type="submit" id="submit" className="search-button"><i className="material-icons icn-search">search</i></button>
+
       </form>      
     );
   }
