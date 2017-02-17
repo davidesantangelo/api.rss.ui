@@ -8,7 +8,7 @@ https://www.npmjs.com/package/axios
 
 ## Live
 
-live at https://github-axios.herokuapp.com
+https://github-axios.herokuapp.com
 
 ## Run
 
