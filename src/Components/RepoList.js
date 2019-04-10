@@ -6,8 +6,8 @@ const RepoList = props => {
   
   const results = props.data;
   let repos;
-  if (results.length) {
-    repos = results.map(repo => <Repo name={repo.name} url={repo.html_url} description={repo.description} key={repo.id} />);    
+  if (results) {
+    repos = results.map(repo => <Repo title={repo.attributes.title} url={repo.attributes.url} body={repo.attributes.body} />);    
   } else {
     repos = <NoRepos />
   }
