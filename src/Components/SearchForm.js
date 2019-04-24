@@ -13,14 +13,13 @@ export default class SearchForm extends Component {
   handleSubmit = e => {
     e.preventDefault();
     this.props.onSearch(this.query.value);
-    e.currentTarget.reset();
   }
   
   render() {  
     return (
       <form className="search-form" onSubmit={this.handleSubmit} >
         <label className="is-hidden" htmlFor="search">Search</label>
-        <input type="search" 
+        <input type="text"
                onChange={this.onSearchChange}
                name="search" 
                ref={(input) => this.query = input}
