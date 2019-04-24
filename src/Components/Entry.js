@@ -2,9 +2,8 @@ import React from 'react';
 import Moment from 'react-moment';
 import 'moment-timezone';
 import Truncate from 'react-truncate';
-import { spawn } from 'child_process';
 
-const Repo = props => (
+const Entry = props => (
   <div className="entry-box">  
     <a href={props.url} target="_BLANK">{props.title}</a>
     <span className="url">{props.url}</span>
@@ -19,4 +18,4 @@ const Repo = props => (
 
 );
 
-export default Repo;
+export default Entry;

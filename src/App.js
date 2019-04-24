@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
 import SearchForm from './Components/SearchForm';
-import RepoList from './Components/RepoList';
+import EntryList from './Components/EntryList';
 
 export default class App extends Component {
   
   constructor() {
     super();
     this.state = {
-      repos: [],
+      entries: [],
       loading: true
     };
   } 
@@ -23,7 +23,7 @@ export default class App extends Component {
       .then(response => {
         this.setState({
           query: query,
-          repos: response.data.data,
+          entries: response.data.data,
           loading: false
         });
       })
@@ -44,7 +44,7 @@ export default class App extends Component {
           {
             (this.state.loading)
              ? <p>Loading...</p>
-             : <div><RepoList data={this.state.repos} query={this.state.query}/></div>
+             : <div><EntryList data={this.state.entries} query={this.state.query}/></div>
           }          
         </div>
       </div>
