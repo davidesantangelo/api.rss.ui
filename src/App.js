@@ -19,7 +19,7 @@ export default class App extends Component {
   }
   
   performSearch = (query = 'ruby') => {
-    axios.get(`https://feedi.me/search/entries?q=${query}`, { headers: {"Authorization" : 'Token A7lKL3OyLYcJkhkVPK8ZnpHuCHs5ymrN8K9TmC6xifjU-a0l9BK_bMOrkWvXgKDih8_m-iVRw70P545TPsMD3g'} })
+    axios.get(`https://feedi.me/search/entries?q=${query}`)
       .then(response => {
         this.setState({
           query: query,
@@ -35,15 +35,27 @@ export default class App extends Component {
   render() { 
     return (
       <div>
+        
         <div className="main-header">
           <div className="inner">
             <SearchForm onSearch={this.performSearch} query={this.state.query} />      
           </div>   
         </div>    
         <div className="main-content">
+          <div className="jumbotron  jumbotron-fluid">
+          <button type="button" className="btn btn-secondary">
+            Query <span className="badge badge-light">{this.state.query}</span>
+          </button>
+          <button type="button" className="btn btn-secondary">
+            Entries <span className="badge badge-light">{this.state.entries.length}</span>
+          </button>
+          </div>
+       
           {
             (this.state.loading)
-             ? <p>Loading...</p>
+             ? <div className="spinner-border" role="status">
+                <span className="sr-only">Loading...</span>
+              </div>
              : <div><EntryList data={this.state.entries} query={this.state.query}/></div>
           }          
         </div>

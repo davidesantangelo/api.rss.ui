@@ -30,6 +30,7 @@ input:focus {
   border-color: #c1c1c1;
 }
 
+
 /* ================================= 
   Page Components
 ==================================== */
@@ -57,8 +58,6 @@ textarea:focus, input:focus{
 
 .no-entries  {
   color: #7bcbc4;
-  height: 140px;
-  padding-top: 62px;
   text-align: center;
   font-size: 1.25em;
 }
@@ -138,10 +137,7 @@ textarea:focus, input:focus{
   .entry-wrap img {
     height: 235px;
   }
-  .entry-list .no-entries {
-    float: none;
-    width: 100%;
-  }
+
   .entry-wrap {
     border: 1px solid white;
     padding: 0;
@@ -150,6 +146,14 @@ textarea:focus, input:focus{
   }
 }
 
+.jumbotron {
+  background: #FFFFFF;
+  padding: 5px 0
+}
+
+.jumbotron button {
+  margin-right: 10px
+}
 
 .moment {
   margin-top: 5px;
