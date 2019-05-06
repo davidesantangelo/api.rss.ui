@@ -1,4 +1,4 @@
-# Picki
+# Feedi Search Engine
 
 
 ## Run

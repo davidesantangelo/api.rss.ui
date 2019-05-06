@@ -9,13 +9,13 @@
 body {
   font: 1em/1.5 'Roboto', sans-serif;
   color: #4c4c4c;
-  padding-top: 145px;
-  padding-bottom: 3em;
   margin: 0;
+  padding-bottom: 40px
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 ul,
@@ -41,6 +41,19 @@ input:focus {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0;
+}
+
+.page-item.disabled .page-link {
+  background-color: none !important;
+}
+.page-link, .page-item {
+  border: 0;
+  background-color: none;
+  background: none;
+}
+
+.badge {
+  border-radius: 0;
 }
 
 .search-form input {
@@ -83,8 +96,7 @@ textarea:focus, input:focus{
 
 .inner,
 .main-content {
-  width: 90%;
-  padding-right: 40%;
+  width: 85%;
   margin: auto;
 }
 
@@ -96,7 +108,7 @@ textarea:focus, input:focus{
   background: #fff;
   min-height: 80px;
   z-index: 1000;
-  border-bottom: 1px solid #ebebeb
+  border-bottom: 1px solid #cccccc
 }
 
 .main-content::after {
@@ -147,8 +159,8 @@ textarea:focus, input:focus{
 }
 
 .jumbotron {
-  background: #FFFFFF;
-  padding: 5px 0
+  background: #F9F9F9;
+  padding: 5px
 }
 
 .jumbotron button {
@@ -166,7 +178,7 @@ textarea:focus, input:focus{
 }
 
 .entry-box  {
-  margin-bottom: 50px
+  margin-bottom: 50px;
 }
 
 .body {
