@@ -107,7 +107,7 @@ textarea:focus, input:focus{
   width: 100%;
   background: #fff;
   min-height: 80px;
-  z-index: 1000;
+  z-index: 700;
   border-bottom: 1px solid #cccccc
 }
 
