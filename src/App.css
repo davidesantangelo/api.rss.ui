@@ -58,6 +58,7 @@ input:focus {
 
 .search-form input {
   width: 100%;
+  margin: 10px 0;
   height: 60px;
   line-height: 60px;
   border: 0px solid;
@@ -195,8 +196,7 @@ textarea:focus, input:focus{
   }
   .search-form {
     width: 100%;
-    margin-top: 10px;
-    height: 40px;
+    height: 80px;
   }
   .entry-list li {
     width: 33.333333333%;
