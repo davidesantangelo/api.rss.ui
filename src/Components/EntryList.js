@@ -7,7 +7,7 @@ const EntryList = props => {
   const results = props.data;
   let entries;
   if (Array.isArray(results) && results.length) {
-    entries = results.map(entry => <Entry key={entry.id} title={entry.attributes.title} url={entry.attributes.url} text={entry.attributes.text} sentiment={entry.attributes.sentiment ? entry.attributes.sentiment.type : null} timestamp={entry.attributes.published_at}/>);
+    entries = results.map(entry => <Entry key={entry.id} title={entry.attributes.title} url={entry.attributes.url} text={entry.attributes.text} sentiment={entry.attributes.sentiment ? entry.attributes.sentiment.type : null} sentiment_score={entry.attributes.sentiment ? entry.attributes.sentiment.score : null} timestamp={entry.attributes.published_at}/>);
   } else {
     entries = <NoEntries query={props.query} />
   }

@@ -20,7 +20,7 @@ export default class App extends Component {
     this.performSearch();
   }
   
-  performSearch = (query = 'ruby', page = null) => {
+  performSearch = (query = 'dev.to', page = null) => {
 
     axios.get(`https://feedi.me/search/entries?q=${query}&page=${page ? page : this.state.page}`)
       .then(response => {

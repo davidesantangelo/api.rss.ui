@@ -16,7 +16,7 @@ const Entry = props => {
 
   return(
     <div className="entry-box">
-      <span title={'sentiment: ' + props.sentiment} className={"badge badge-" + sentimentClass}>{props.sentiment}</span>
+      <span title={'sentiment: ' + props.sentiment + ', score: ' + props.sentiment_score} className={"badge badge-" + sentimentClass}>{props.sentiment}</span>
       <a href={props.url} target="_BLANK">{props.title}</a>
       <span className="url">
         <Truncate lines={1} ellipsis={<span>...</span>}>
