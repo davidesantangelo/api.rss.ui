@@ -4,6 +4,10 @@
 
 small application developed in ReactJS that uses the API provided by [Feedi](https://github.com/davidesantangelo/feedi)
 
+## Live
+
+[search.feedi.me](https://search.feedi.me)
+
 ## Run
 
 npm install, npm start
