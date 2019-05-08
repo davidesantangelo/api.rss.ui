@@ -63,7 +63,8 @@ input:focus {
   line-height: 60px;
   border: 0px solid;
   font-size: 22px;
-  font-weight: 200
+  font-weight: 200;
+  padding: 5px
 }
 
 textarea:focus, input:focus{
@@ -103,10 +104,9 @@ textarea:focus, input:focus{
 
 .main-header {
   width: 100%;
-  background: #fff;
   min-height: 80px;
   z-index: 700;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 2px solid #cccccc;
   margin-bottom: 30px
 }
 

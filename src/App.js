@@ -22,6 +22,14 @@ export default class App extends Component {
   
   performSearch = (query = 'dev.to', page = null) => {
 
+    let search = window.location.search;
+    let params = new URLSearchParams(search);
+    let q = params.get('q');
+
+    if (q) {
+      query = q 
+    }
+    
     axios.get(`https://feedi.me/search/entries?q=${query}&page=${page ? page : this.state.page}`)
       .then(response => {
         this.setState({
