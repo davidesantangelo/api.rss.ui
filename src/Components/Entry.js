@@ -16,6 +16,7 @@ const Entry = props => {
 
   return(
     <div className="entry-box">
+
       <span title={'sentiment: ' + props.sentiment + ', score: ' + props.sentiment_score} className={"badge badge-" + sentimentClass}>{props.sentiment}</span>
       <a href={props.url} target="_BLANK">{props.title}</a>
       <span className="url">
@@ -23,14 +24,20 @@ const Entry = props => {
           {props.url}
         </Truncate>
       </span>
-
+      
       <div className="body">
         <Truncate lines={3} ellipsis={<span>...</span>}>
             {props.text}
         </Truncate>
       </div>
       
-      <div className="moment"><Moment date={props.timestamp * 1000} /></div>
+      <div className="informations">
+        <span className="badge badge-light"><Moment date={props.timestamp * 1000} /></span>
+        <span className="badge badge-light"><a href={props.feed}>{props.feed}</a></span>
+        
+      </div>            
+
+      
     </div>
   );
 }

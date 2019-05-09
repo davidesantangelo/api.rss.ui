@@ -11,6 +11,7 @@ body {
   color: #4c4c4c;
   margin: 0;
   padding-bottom: 20px;
+  background: #f6f6f6;
 }
 
 a {
@@ -61,11 +62,11 @@ input:focus {
   margin: 10px 0;
   height: 60px;
   line-height: 40px;
-  border: 0px solid;
+  border: 0;
   border-radius: 2px;
   font-size: 22px;
   font-weight: 200;
-  padding: 15px
+  padding: 15px;
 }
 
 textarea:focus, input:focus{
@@ -105,10 +106,11 @@ textarea:focus, input:focus{
 
 .main-header {
   width: 100%;
-  background: #FD6C6C;
+  border-bottom: 1px solid #ccc;
   min-height: 60px;
   z-index: 700;
-  margin-bottom: 30px
+  margin-bottom: 30px;
+  background: #fff;
 }
 
 .main-content::after {
@@ -159,7 +161,6 @@ textarea:focus, input:focus{
 }
 
 .jumbotron {
-  background: #F9F9F9;
   padding: 5px
 }
 
@@ -167,10 +168,8 @@ textarea:focus, input:focus{
   margin-right: 10px
 }
 
-.moment {
+.informations {
   margin-top: 5px;
-  font-size: 14px;
-  color: #777
 }
 
 .url {
