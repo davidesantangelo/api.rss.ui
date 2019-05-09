@@ -23,7 +23,7 @@ export default class SearchForm extends Component {
                onChange={this.onSearchChange}
                name="search" 
                ref={(input) => this.query = input}
-               placeholder="Search..." />
+               placeholder="Search entries..." />
       
       </form>      
     );

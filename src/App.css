@@ -11,7 +11,7 @@ body {
   color: #4c4c4c;
   margin: 0;
   padding-bottom: 20px;
-  background: #f6f6f6;
+  background: #ffff;
 }
 
 a {
@@ -63,7 +63,7 @@ input:focus {
   height: 60px;
   line-height: 40px;
   border: 0;
-  border-radius: 2px;
+  border-radius: 5px;
   font-size: 22px;
   font-weight: 200;
   padding: 15px;
@@ -106,7 +106,7 @@ textarea:focus, input:focus{
 
 .main-header {
   width: 100%;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
   min-height: 60px;
   z-index: 700;
   margin-bottom: 30px;
