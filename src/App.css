@@ -10,7 +10,7 @@ body {
   font: 1em/1.5 'Roboto', sans-serif;
   color: #4c4c4c;
   margin: 0;
-  background: #f9f9f9;
+  background: #fff;
 }
 
 a {
@@ -51,9 +51,7 @@ input:focus {
 .main-footer {
   width: 100%;
   min-height: 60px;
-  z-index: 700;
   margin-bottom: 30px;
-  background: #f9f9f9;
 }
 
 .no-padding-top {
@@ -62,8 +60,7 @@ input:focus {
 
 
 .main-footer .jumbotron {
-  background: #f9f9f9;
-  border: 1px solid #ddd
+  border: 1px solid #17a2b8
 }
 
 .page-item.disabled .page-link {
@@ -84,7 +81,7 @@ input:focus {
   margin: 10px 0;
   height: 60px;
   line-height: 40px;
-  border: 2px solid #17a2b8;
+  border: 1px solid #17a2b8;
   border-radius: 2px;
   font-size: 22px;
   font-weight: 200;
@@ -133,6 +130,7 @@ textarea:focus, input:focus{
   padding-top: 15px;
   margin-bottom: 30px;
   background: #fff;
+  border-bottom: 1px solid #17a2b8;
 }
 
 .main-content::after {
