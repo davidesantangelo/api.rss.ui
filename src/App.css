@@ -16,6 +16,11 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: #17a2b8
+}
+
+.btn {
+  border-radius: 0;
 }
 
 ul,
@@ -43,9 +48,17 @@ input:focus {
   margin: 0;
 }
 
-.main-info {
+.main-info .jumbotron{
   width: 80%;
   margin: auto;
+  background: #ffffff;
+}
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;  
 }
 
 .main-footer {
@@ -59,7 +72,7 @@ input:focus {
 }
 
 .main-footer .jumbotron {
-  border: 1px solid #17a2b8
+  border: 3px solid #17a2b8
 }
 
 .page-item.disabled .page-link {
@@ -80,7 +93,7 @@ input:focus {
   margin: 10px 0;
   height: 60px;
   line-height: 40px;
-  border: 1px solid #17a2b8;
+  border: 3px solid #17a2b8;
   border-radius: 2px;
   font-size: 22px;
   font-weight: 200;
@@ -126,10 +139,10 @@ textarea:focus, input:focus{
   width: 100%;
   min-height: 150px;
   z-index: 700;
-  padding-top: 22px;
+  padding-top: 15px;
   margin-bottom: 30px;
-  background: #fff;
-  border-bottom: 1px solid #17a2b8;
+  background: #ffffff;
+  border-bottom: 3px solid #17a2b8
 }
 
 .main-content::after {
@@ -183,6 +196,8 @@ textarea:focus, input:focus{
   padding: 0px;
   background: #fff;
 }
+
+
 
 .jumbotron button {
   margin-right: 10px
