@@ -46,7 +46,6 @@ input:focus {
 .main-info {
   width: 80%;
   margin: auto;
-  height: 40px;
 }
 
 .main-footer {
@@ -85,8 +84,8 @@ input:focus {
   margin: 10px 0;
   height: 60px;
   line-height: 40px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  border: 2px solid #17a2b8;
+  border-radius: 2px;
   font-size: 22px;
   font-weight: 200;
   padding: 15px;
@@ -129,8 +128,9 @@ textarea:focus, input:focus{
 
 .main-header {
   width: 100%;
-  min-height: 60px;
+  min-height: 150px;
   z-index: 700;
+  padding-top: 15px;
   margin-bottom: 30px;
   background: #fff;
 }
