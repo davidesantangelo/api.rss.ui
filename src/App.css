@@ -58,7 +58,6 @@ input:focus {
   padding: 0 5px 0 0;
 }
 
-
 .main-footer .jumbotron {
   border: 1px solid #17a2b8
 }
@@ -127,7 +126,7 @@ textarea:focus, input:focus{
   width: 100%;
   min-height: 150px;
   z-index: 700;
-  padding-top: 15px;
+  padding-top: 22px;
   margin-bottom: 30px;
   background: #fff;
   border-bottom: 1px solid #17a2b8;
