@@ -66,16 +66,16 @@ export default class App extends Component {
         <div className="main-content">
           { this.state.entries.length > 0 &&
             <div className="jumbotron  jumbotron-fluid">
-              <button type="button" className="btn btn-light">
+              <button type="button" className="btn btn-sm btn-light">
                 Query <span className="badge badge-primary">{this.state.query}</span>
               </button>
-              <button type="button" className="btn btn-light">
+              <button type="button" className="btn btn-sm btn-light">
                 Entries <span className="badge badge-primary">{this.state.total}</span>
               </button>
-              <button type="button" className="btn btn-light">
+              <button type="button" className="btn btn-sm btn-light">
                 Per Page <span className="badge badge-primary">{this.state.perPage}</span>
               </button>
-              <button type="button" className="btn btn-light">
+              <button type="button" className="btn btn-sm btn-light">
                 Current Page <span className="badge badge-primary">{this.state.currentPage}</span>
               </button>
 
