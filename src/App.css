@@ -10,8 +10,7 @@ body {
   font: 1em/1.5 'Roboto', sans-serif;
   color: #4c4c4c;
   margin: 0;
-  padding-bottom: 20px;
-  background: #ffff;
+  background: #f9f9f9;
 }
 
 a {
@@ -44,6 +43,30 @@ input:focus {
   margin: 0;
 }
 
+.main-info {
+  width: 80%;
+  margin: auto;
+  height: 40px;
+}
+
+.main-footer {
+  width: 100%;
+  min-height: 60px;
+  z-index: 700;
+  margin-bottom: 30px;
+  background: #f9f9f9;
+}
+
+.no-padding-top {
+  padding: 0 5px 0 0;
+}
+
+
+.main-footer .jumbotron {
+  background: #f9f9f9;
+  border: 1px solid #ddd
+}
+
 .page-item.disabled .page-link {
   background-color: none !important;
 }
@@ -62,7 +85,7 @@ input:focus {
   margin: 10px 0;
   height: 60px;
   line-height: 40px;
-  border: 0;
+  border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 22px;
   font-weight: 200;
@@ -100,13 +123,12 @@ textarea:focus, input:focus{
 
 .inner,
 .main-content {
-  width: 85%;
+  width: 80%;
   margin: auto;
 }
 
 .main-header {
   width: 100%;
-  border-bottom: 1px solid #ddd;
   min-height: 60px;
   z-index: 700;
   margin-bottom: 30px;
@@ -161,14 +183,15 @@ textarea:focus, input:focus{
 }
 
 .jumbotron {
-  padding: 5px
+  padding: 0px;
+  background: #fff;
 }
 
 .jumbotron button {
   margin-right: 10px
 }
 
-.informations {
+.information {
   margin-top: 5px;
 }
 
@@ -182,7 +205,8 @@ textarea:focus, input:focus{
 
 .body {
   word-wrap: break-word;
-  font-size: 14px
+  font-size: 14px;
+
 }
 
 @media (min-width: 769px) {

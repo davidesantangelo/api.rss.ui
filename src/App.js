@@ -61,9 +61,7 @@ export default class App extends Component {
           <div className="inner">
             <SearchForm onSearch={this.performSearch} query={this.state.query} />      
           </div>   
-        </div>
-      
-        <div className="main-content">
+          <div className="main-info">
           { this.state.entries.length > 0 &&
             <div className="jumbotron  jumbotron-fluid">
               <button type="button" className="btn btn-sm btn-light">
@@ -80,8 +78,14 @@ export default class App extends Component {
               </button>
 
             </div>
+          
           }
+          </div>
        
+        </div>
+      
+        <div className="main-content">
+          
           {
             (this.state.loading)
              ? <div className="spinner-border" role="status">
@@ -90,8 +94,9 @@ export default class App extends Component {
              : <div>
               
               <EntryList data={this.state.entries} query={this.state.query}/>
+              <div className="main-footer">
               { this.state.entries.length > 0 && 
-                <div className="jumbotron  jumbotron-fluid">
+                <div className="jumbotron jumbotron-fluid">
                   <ReactPaginate
                       previousLabel={'prev'}
                       nextLabel={'next'}
@@ -103,7 +108,7 @@ export default class App extends Component {
                       marginPagesDisplayed={2}
                       pageRangeDisplayed={5}
                       onPageChange={this.handlePageClick}
-                      containerClassName={'pagination'}
+                      containerClassName={'pagination pagination-sm'}
                       subContainerClassName={'pages pagination'}
                       activeClassName={'active'}
                       previousClassName={'page-item'}
@@ -113,6 +118,7 @@ export default class App extends Component {
                     /> 
                   </div>
                 }
+                </div>
               </div>
           }     
         </div>

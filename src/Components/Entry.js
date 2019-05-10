@@ -31,9 +31,9 @@ const Entry = props => {
         </Truncate>
       </div>
       
-      <div className="informations">
-        <span className="badge badge-light"><Moment date={props.timestamp * 1000} /></span>
-        <span className="badge badge-light"><a href={props.feed}>{props.feed}</a></span>
+      <div className="information">
+        <span className="badge badge-light no-padding-top"><Moment date={props.timestamp * 1000} /></span>
+        <span className="badge badge-light no-padding-top"><a href={props.feed}>{props.feed}</a></span>
         
       </div>            
 
