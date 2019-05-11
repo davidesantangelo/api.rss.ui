@@ -11,7 +11,9 @@ body {
   color: #4c4c4c;
   margin: 0;
   background: #fff;
+  padding-bottom: 20px
 }
+
 
 a {
   text-decoration: none;
@@ -63,8 +65,7 @@ input:focus {
 
 .main-footer {
   width: 100%;
-  min-height: 60px;
-  margin-bottom: 30px;
+  min-height: 40px;
 }
 
 .no-padding-top {
@@ -200,7 +201,7 @@ textarea:focus, input:focus{
 
 
 .jumbotron button {
-  margin-right: 10px
+  margin-right: 5px
 }
 
 .information {

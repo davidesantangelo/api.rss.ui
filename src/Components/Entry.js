@@ -6,9 +6,9 @@ import Truncate from 'react-truncate';
 const Entry = props => {
   let sentimentClass = '';
 
-  if (props.sentiment == 'positive') {
+  if (props.sentiment === 'positive') {
     sentimentClass = 'success';
-  } else if (props.sentiment == 'negative') {
+  } else if (props.sentiment === 'negative') {
     sentimentClass = 'danger';
   } else {
     sentimentClass = 'secondary';
@@ -18,7 +18,7 @@ const Entry = props => {
     <div className="entry-box">
 
       <span title={'sentiment: ' + props.sentiment + ', score: ' + props.sentiment_score} className={"badge badge-" + sentimentClass}>{props.sentiment}</span>
-      <a href={props.url} target="_BLANK">{props.title}</a>
+      <a href={props.url} rel="noopener noreferrer" target="_BLANK">{props.title}</a>
       <span className="url">
         <Truncate lines={1} ellipsis={<span>...</span>}>
           {props.url}

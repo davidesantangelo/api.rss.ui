@@ -4,6 +4,8 @@ import axios from 'axios';
 import SearchForm from './Components/SearchForm';
 import EntryList from './Components/EntryList';
 import ReactPaginate from 'react-paginate';
+import strictUriEncode from 'strict-uri-encode';
+import queryString from 'query-string'
 
 export default class App extends Component {
   
@@ -12,7 +14,6 @@ export default class App extends Component {
     this.state = {
       entries: [],
       loading: true,
-      page: 1
     };
   } 
 
@@ -20,37 +21,42 @@ export default class App extends Component {
     this.performSearch();
   }
   
-  performSearch = (query = 'dev.to', page = null) => {
+  performSearch = (query = '', page = null) => {
+    const parsed = queryString.parse(window.location.search);
+    page = parsed.page ? parsed.page : 1
 
-    let search = window.location.search;
-    let params = new URLSearchParams(search);
-    let q = params.get('q');
-
-    if (q) {
-      query = q 
+    if (query) {
+      window.location.search = "?q=" + strictUriEncode(query) + "&page=" + 1;
     }
-    
-    axios.get(`https://feedi.me/search/entries?q=${query}&page=${page ? page : this.state.page}`)
-      .then(response => {
-        this.setState({
-          query: query,
-          entries: response.data.data,
-          total: response.headers['total'],
-          perPage: response.headers['per-page'],
-          currentPage: response.headers['current-page'],
-          loading: false
-        });
-      })
-      .catch(error => {
-        console.log('Error fetching and parsing data', error);
-      });    
+   
+    query = parsed.q
+   
+    if (query) {
+      axios.get(`https://feedi.me/search/entries?q=${query}&page=${page}`)
+        .then(response => {
+          
+          this.setState({
+            query: query,
+            entries: response.data.data,
+            total: response.headers['total'],
+            perPage: response.headers['per-page'],
+            currentPage: response.headers['current-page'],
+            loading: false
+          });
+        })
+        .catch(error => {
+          console.log('Error fetching and parsing data', error);
+          this.setState({ loading: false , entries: [], query: query });
+        });    
+    } else {
+      this.setState({ loading: false , entries: [], query: '' })
+    }
   }
 
   handlePageClick = data => {
     let selected = data.selected;
-    this.setState({ page: selected + 1}, () => {
-      this.performSearch(this.state.query);
-    });
+
+    window.location.search = "?q=" + strictUriEncode(this.state.query) + "&page=" + (selected + 1);
   };
   
   render() { 
@@ -64,18 +70,20 @@ export default class App extends Component {
           <div className="main-info">
           { this.state.entries.length > 0 &&
             <div className="jumbotron  jumbotron-fluid">
-              <button type="button" className="btn btn-sm btn-info">
-                Query <span className="badge badge-light">{this.state.query}</span>
-              </button>
-              <button type="button" className="btn btn-sm btn-info">
-                Entries <span className="badge badge-light">{this.state.total}</span>
-              </button>
-              <button type="button" className="btn btn-sm btn-info">
-                Per Page <span className="badge badge-light">{this.state.perPage}</span>
-              </button>
-              <button type="button" className="btn btn-sm btn-info">
-                Current Page <span className="badge badge-light">{this.state.currentPage}</span>
-              </button>
+              <div className="btn-group" role="group" aria-label="Basic example">
+                <button type="button" className="btn btn-sm btn-info">
+                  Query <span className="badge badge-light">{this.state.query}</span>
+                </button>
+                <button type="button" className="btn btn-sm btn-info">
+                  Total <span className="badge badge-light">{this.state.total}</span>
+                </button>
+                <button type="button" className="btn btn-sm btn-info">
+                  Per Page <span className="badge badge-light">{this.state.perPage}</span>
+                </button>
+                <button type="button" className="btn btn-sm btn-info">
+                  Current Page <span className="badge badge-light">{this.state.currentPage}</span>
+                </button>
+              </div>
 
             </div>
           
@@ -101,13 +109,14 @@ export default class App extends Component {
                       previousLabel={'prev'}
                       nextLabel={'next'}
                       breakLabel={'...'}
+                      forcePage={this.state.currentPage - 1}
                       pageClassName={'page-item'}
                       pageLinkClassName={'page-link'}
                       breakClassName={'break-me'}
                       pageCount={this.state.total / this.state.perPage}
                       marginPagesDisplayed={2}
-                      pageRangeDisplayed={5}
                       onPageChange={this.handlePageClick}
+                      pageRangeDisplayed={5}
                       containerClassName={'pagination pagination-sm'}
                       subContainerClassName={'pages pagination'}
                       activeClassName={'active'}
@@ -122,6 +131,13 @@ export default class App extends Component {
               </div>
           }     
         </div>
+        { this.state.entries.length > 0 && 
+          <div className="main-content">
+            <footer>
+              Made by <a href="https://twitter.com/daviducolo">Davide Santangelo</a>. Source on <a href="https://github.com/davidesantangelo/feedi">GitHub</a>.
+            </footer>
+          </div>
+        }
       </div>
     );
   }
