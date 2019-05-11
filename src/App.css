@@ -42,12 +42,8 @@ input:focus {
   Page Components
 ==================================== */
 
-.main-title {
-  font-size: 1.4em;
-  line-height: 80px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 0;
+.main-author a {
+  color: lightcoral
 }
 
 .main-info .jumbotron{
@@ -223,10 +219,6 @@ textarea:focus, input:focus{
 }
 
 @media (min-width: 769px) {
-
-  .main-title {
-    float: left;
-  }
   .search-form {
     width: 100%;
   }

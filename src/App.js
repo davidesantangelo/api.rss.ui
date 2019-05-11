@@ -14,6 +14,9 @@ export default class App extends Component {
     this.state = {
       entries: [],
       loading: true,
+      total: 0,
+      perPage: 0,
+      currentPage: 0
     };
   } 
 
@@ -68,7 +71,7 @@ export default class App extends Component {
             <SearchForm onSearch={this.performSearch} query={this.state.query} />      
           </div>   
           <div className="main-info">
-          { this.state.entries.length > 0 &&
+         
             <div className="jumbotron  jumbotron-fluid">
               <div className="btn-group" role="group" aria-label="Basic example">
                 <button type="button" className="btn btn-sm btn-info">
@@ -87,7 +90,7 @@ export default class App extends Component {
 
             </div>
           
-          }
+          
           </div>
        
         </div>
@@ -132,10 +135,8 @@ export default class App extends Component {
           }     
         </div>
         { this.state.entries.length > 0 && 
-          <div className="main-content">
-            <footer>
+          <div className="main-content main-author">
               Made by <a href="https://twitter.com/daviducolo">Davide Santangelo</a>. Source on <a href="https://github.com/davidesantangelo/feedi">GitHub</a>.
-            </footer>
           </div>
         }
       </div>
