@@ -25,6 +25,11 @@ a {
   border-radius: 0;
 }
 
+.btn-light {
+  font-size: 12px;
+  border: 1px solid #dddddd;
+}
+
 ul,
 li {
   margin: 0;
@@ -66,6 +71,12 @@ input:focus {
 
 .btn-group button a {
   color: #ffffff
+}
+
+.date {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #777
 }
 
 .main-footer .jumbotron {

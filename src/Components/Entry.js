@@ -31,9 +31,10 @@ const Entry = props => {
         </Truncate>
       </div>
       
+      <div className="date"><Moment date={props.timestamp * 1000} /></div>
+
       <div className="information">
-        <button className="btn btn-light btn-sm"><Moment date={props.timestamp * 1000} /></button>
-        <button className="btn btn-light btn-sm"><a href={props.feed} title={props.feed}>Feed</a></button>
+        <button className="btn btn-light btn-sm"><a href={props.feed} target="_BLANK" title={props.feed}>Visit Origin Feed</a></button>
         
       </div>            
 
