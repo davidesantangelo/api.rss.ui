@@ -33,7 +33,7 @@ const Entry = props => {
       
       <div className="information">
         <button className="btn btn-light btn-sm"><Moment date={props.timestamp * 1000} /></button>
-        <button className="btn btn-light btn-sm"><a href={props.feed}>{props.feed}</a></button>
+        <button className="btn btn-light btn-sm"><a href={props.feed} title={props.feed}>Feed</a></button>
         
       </div>            
 
