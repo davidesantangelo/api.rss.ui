@@ -18,7 +18,7 @@ export default class App extends Component {
       perPage: 0,
       currentPage: 0
     };
-  } 
+  }
 
   componentDidMount() {
     this.performSearch();
@@ -72,18 +72,21 @@ export default class App extends Component {
           </div>   
           <div className="main-info">
          
-            <div className="jumbotron  jumbotron-fluid">
-              <div className="btn-group" role="group" aria-label="Basic example">
-                <button type="button" className="btn btn-sm btn-info">
+            <div className="jumbotron jumbotron-fluid">
+              <div className="btn-group" role="group">
+                <button type="button" className="btn btn-sm btn-secondary">
+                  <a href="/">Home</a> <span className="badge badge-light"></span>
+                </button>
+                <button type="button" className="btn btn-sm btn-secondary">
                   Query <span className="badge badge-light">{this.state.query}</span>
                 </button>
-                <button type="button" className="btn btn-sm btn-info">
+                <button type="button" className="btn btn-sm btn-secondary">
                   Total <span className="badge badge-light">{this.state.total}</span>
                 </button>
-                <button type="button" className="btn btn-sm btn-info">
+                <button type="button" className="btn btn-sm btn-secondary">
                   Per Page <span className="badge badge-light">{this.state.perPage}</span>
                 </button>
-                <button type="button" className="btn btn-sm btn-info">
+                <button type="button" className="btn btn-sm btn-secondary">
                   Current Page <span className="badge badge-light">{this.state.currentPage}</span>
                 </button>
               </div>

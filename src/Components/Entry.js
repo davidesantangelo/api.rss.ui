@@ -32,8 +32,8 @@ const Entry = props => {
       </div>
       
       <div className="information">
-        <span className="badge badge-light no-padding-top"><Moment date={props.timestamp * 1000} /></span>
-        <span className="badge badge-light no-padding-top"><a href={props.feed}>{props.feed}</a></span>
+        <button className="btn btn-light btn-sm"><Moment date={props.timestamp * 1000} /></button>
+        <button className="btn btn-light btn-sm"><a href={props.feed}>{props.feed}</a></button>
         
       </div>            
 

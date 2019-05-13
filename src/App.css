@@ -14,11 +14,11 @@ body {
   padding-bottom: 20px
 }
 
-
 a {
   text-decoration: none;
   cursor: pointer;
-  color: #17a2b8
+  color: #0056b3;
+  font-weight: 500;
 }
 
 .btn {
@@ -47,16 +47,16 @@ input:focus {
 }
 
 .main-info .jumbotron{
-  width: 80%;
-  margin: auto;
+  width: 60%;
+  margin: 0 0 0 4%;
   background: #ffffff;
 }
 
 .page-item.active .page-link {
   z-index: 1;
   color: #fff;
-  background-color: #17a2b8;
-  border-color: #17a2b8;  
+  background-color: #000000;
+  border-color: #000000;  
 }
 
 .main-footer {
@@ -64,12 +64,12 @@ input:focus {
   min-height: 40px;
 }
 
-.no-padding-top {
-  padding: 0 5px 0 0;
+.btn-group button a {
+  color: #ffffff
 }
 
 .main-footer .jumbotron {
-  border: 3px solid #17a2b8
+  border: 3px solid #000000
 }
 
 .page-item.disabled .page-link {
@@ -90,7 +90,7 @@ input:focus {
   margin: 10px 0;
   height: 60px;
   line-height: 40px;
-  border: 3px solid #17a2b8;
+  border: 3px solid #000000;
   border-radius: 2px;
   font-size: 22px;
   font-weight: 200;
@@ -128,8 +128,8 @@ textarea:focus, input:focus{
 
 .inner,
 .main-content {
-  width: 80%;
-  margin: auto;
+  width: 60%;
+  margin: 0 0 0 4%;
 }
 
 .main-header {
@@ -139,7 +139,7 @@ textarea:focus, input:focus{
   padding-top: 15px;
   margin-bottom: 30px;
   background: #ffffff;
-  border-bottom: 3px solid #17a2b8
+  border-bottom: 3px solid #000000
 }
 
 .main-content::after {
@@ -159,42 +159,10 @@ textarea:focus, input:focus{
   width: 1px;
 }
 
-/* ================================= 
-  Media Queries
-==================================== */
-
-@media (min-width: 0) and (max-width: 549px) {
-  .entry-list li {
-    text-align: center;
-    margin: 20px;
-    font-size: 0;
-  }
-}
-
-@media (min-width: 550px) {
-  .entry-list li {
-    float: left;
-    width: 50%;
-    margin: 0;
-  }
-  .entry-wrap img {
-    height: 235px;
-  }
-
-  .entry-wrap {
-    border: 1px solid white;
-    padding: 0;
-    overflow: hidden;
-    font-size: 0;
-  }
-}
-
 .jumbotron {
   padding: 0px;
   background: #fff;
 }
-
-
 
 .jumbotron button {
   margin-right: 5px
@@ -218,16 +186,52 @@ textarea:focus, input:focus{
 
 }
 
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 0) and (max-width: 549px) {
+  .entry-list li {
+    text-align: center;
+    margin: 20px;
+    font-size: 0;
+  }
+  .inner,.main-content {
+    width: 90%;
+    margin: auto
+  }
+
+  .main-info .jumbotron {
+    width: 90%;
+    margin: auto
+  }
+}
+
+@media (min-width: 550px) {
+  .entry-list li {
+    float: left;
+    width: 50%;
+    margin: 0;
+  }
+  .entry-wrap img {
+    height: 235px;
+  }
+
+  .entry-wrap {
+    border: 1px solid white;
+    padding: 0;
+    overflow: hidden;
+    font-size: 0;
+  }
+}
+
 @media (min-width: 769px) {
   .search-form {
     width: 100%;
   }
   .entry-list li {
     width: 33.333333333%;
-  }
-}
-
-@media (min-width: 769px) { 
+  } 
   .entry-list li:nth-of-type(3n+1) {
     clear: left;
   }
