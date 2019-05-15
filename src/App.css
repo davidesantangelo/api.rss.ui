@@ -47,6 +47,11 @@ input:focus {
   Page Components
 ==================================== */
 
+.btn-ph {
+  position: absolute;
+  bottom: 20px;
+  right: 20px
+}
 
 .main-author {
   padding-top: 25px
