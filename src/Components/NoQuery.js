@@ -25,7 +25,7 @@ const NoQuery = props => {
   return (
     <div>
       <h5>search entries or whatever you want to search.</h5>
-      <p><br></br><a href={url}><button type="button" className="btn btn-secondary">I'm feeling lucky</button></a></p> 
+      <p><br></br><a href={url}><button type="button" className="btn btn-danger">choose for me</button></a></p> 
     </div>
   );
   
