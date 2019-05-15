@@ -47,8 +47,13 @@ input:focus {
   Page Components
 ==================================== */
 
+
+.main-author {
+  padding-top: 25px
+}
+
 .main-author a {
-  color: lightcoral
+  color: #007bff
 }
 
 .main-info .jumbotron{
@@ -173,6 +178,7 @@ textarea:focus, input:focus{
 .jumbotron {
   padding: 0px;
   background: #fff;
+  margin: 0
 }
 
 .jumbotron button {

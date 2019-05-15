@@ -75,19 +75,19 @@ export default class App extends Component {
             <div className="jumbotron jumbotron-fluid">
               <div className="btn-group" role="group">
                 <button type="button" className="btn btn-sm btn-secondary">
-                  <a href="/">Home</a> <span className="badge badge-light"></span>
+                  <a href="/">Home</a> <span className="badge badge-primary"></span>
                 </button>
                 <button type="button" className="btn btn-sm btn-secondary">
-                  Query <span className="badge badge-light">{this.state.query}</span>
+                  Query <span className="badge badge-primary">{this.state.query}</span>
                 </button>
                 <button type="button" className="btn btn-sm btn-secondary">
-                  Total <span className="badge badge-light">{this.state.total}</span>
+                  Total <span className="badge badge-primary">{this.state.total}</span>
                 </button>
                 <button type="button" className="btn btn-sm btn-secondary">
-                  Per Page <span className="badge badge-light">{this.state.perPage}</span>
+                  Per Page <span className="badge badge-primary">{this.state.perPage}</span>
                 </button>
                 <button type="button" className="btn btn-sm btn-secondary">
-                  Current Page <span className="badge badge-light">{this.state.currentPage}</span>
+                  Current Page <span className="badge badge-primary">{this.state.currentPage}</span>
                 </button>
               </div>
 
