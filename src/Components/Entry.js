@@ -17,12 +17,14 @@ const Entry = props => {
   return(
     <div className="entry-box">
 
-      <a href={props.url} rel="noopener noreferrer" target="_BLANK">{props.title}</a><br></br>
-      <span className="url">
-        <Truncate lines={1} ellipsis={<span>...</span>}>
-          {props.url}
-        </Truncate>
-      </span>
+      <div className="entry-box-head">
+        <a href={props.url} rel="noopener noreferrer" target="_BLANK">{props.title}</a>
+        <span className="url">
+          <Truncate lines={1} ellipsis={<span>...</span>}>
+            {props.url}
+          </Truncate>
+        </span>
+      </div>
       
       <div className="body">
         <Truncate lines={3} ellipsis={<span>...</span>}>

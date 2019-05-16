@@ -219,6 +219,10 @@ textarea:focus, input:focus{
   margin-bottom: 50px;
 }
 
+.entry-box-head a {
+  display: block
+}
+
 .body {
   word-wrap: break-word;
   font-size: 14px;
