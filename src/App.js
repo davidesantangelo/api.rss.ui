@@ -139,12 +139,8 @@ export default class App extends Component {
         </div>
         { this.state.entries.length > 0 && 
           <div className="main-content main-author">
-              Made  by <a href="https://twitter.com/daviducolo">Davide Santangelo</a>. Source on <a href="https://github.com/davidesantangelo/feedi">GitHub <i className="fab fa-github"></i></a>.
+              Made  by <a href="https://twitter.com/daviducolo">Davide Santangelo</a>. Source on <a href="https://github.com/davidesantangelo/feedi">GitHub <i className="fab fa-github-square"></i></a>.
           </div>
-        }
-
-        { this.state.entries.length <= 0  && 
-          <a className="btn-ph" href="https://www.producthunt.com/posts/feedi-search-engine?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-feedi-search-engine" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=155476&theme=dark" alt="Feedi Search Engine - RSS Search Engine | Product Hunt Embed"  width="250px" height="54px" /></a>
         }
       </div>
     );

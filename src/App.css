@@ -10,7 +10,7 @@ body {
   font: 1em/1.5 'Roboto', sans-serif;
   color: #4c4c4c;
   margin: 0;
-  background: #fff;
+  background: #fcfcfc;
   padding-bottom: 20px
 }
 
@@ -19,15 +19,6 @@ a {
   cursor: pointer;
   color: #0056b3;
   font-weight: 500;
-}
-
-.btn {
-  border-radius: 0;
-}
-
-.btn-light {
-  font-size: 12px;
-  border: 1px solid #dddddd;
 }
 
 ul,
@@ -47,10 +38,14 @@ input:focus {
   Page Components
 ==================================== */
 
-.btn-ph {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-light {
+  font-size: 12px;
+  border: 1px solid #dddddd;
 }
 
 .main-author {
@@ -74,8 +69,8 @@ input:focus {
 }
 
 .main-info .jumbotron{
-  width: 65%;
-  margin: 0 0 0 4%;
+  width: 90%;
+  margin: 0 5%;
   background: #ffffff;
 }
 
@@ -161,15 +156,15 @@ textarea:focus, input:focus{
 
 .inner,
 .main-content {
-  width: 60%;
-  margin: 0 0 0 4%;
+  width: 90%;
+  margin: 0 5%;
 }
 
 .main-header {
   width: 100%;
-  min-height: 150px;
+  min-height: 175px;
   z-index: 700;
-  padding-top: 15px;
+  padding-top: 30px;
   margin-bottom: 30px;
   background: #ffffff;
   border-bottom: 3px solid #000000
@@ -206,7 +201,7 @@ textarea:focus, input:focus{
   margin-top: 5px;
 }
 
-.information a{
+.information a {
   margin-right: 5px
 }
 

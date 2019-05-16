@@ -43,10 +43,10 @@ const Entry = props => {
       <div className="date"><Moment date={props.timestamp * 1000} /></div>
 
       <div className="information">
-        <a className="btn btn-light btn-sm" href={props.url} target="_BLANK" title={props.url}> <i className="fas fa-external-link-square-alt"></i></a>
-        <a className="btn btn-light btn-sm" href={props.feed} target="_BLANK" title={props.feed}><i className="fas fa-rss"></i></a>
+        <a className="btn btn-light btn-sm" href={props.url} target="_BLANK" title={props.url}>URL <i className="fas fa-external-link-square-alt"></i></a>
+        <a className="btn btn-light btn-sm" href={props.feed} target="_BLANK" title={props.feed}>RSS <i className="fas fa-rss"></i></a>
         { props.sentiment &&
-          <a className="btn btn-light btn-sm" title={'sentiment: ' + props.sentiment + ', score: ' + props.sentiment_score}><i className={sentimentClass}></i></a>
+          <a className="btn btn-light btn-sm" title={'sentiment: ' + props.sentiment + ', score: ' + props.sentiment_score}>SENTIMENT <i className={sentimentClass}></i></a>
         }
       </div>            
     </div>
