@@ -14,6 +14,10 @@ const Entry = props => {
     sentimentClass = 'far fa-meh';
   }
 
+  let tags = props.tags.slice(0, 4).map((tag, key) =>
+    <span className="badge badge-info" key={tag}>#{tag}</span>
+  );
+  
   return(
     <div className="entry-box">
 
@@ -24,6 +28,10 @@ const Entry = props => {
             {props.url}
           </Truncate>
         </span>
+      </div>
+
+      <div className="entry-tags">
+        {tags}
       </div>
       
       <div className="body">

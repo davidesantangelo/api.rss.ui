@@ -223,6 +223,10 @@ textarea:focus, input:focus{
   display: block
 }
 
+.entry-tags span {
+  margin-right: 5px
+}
+
 .body {
   word-wrap: break-word;
   font-size: 14px;
