@@ -75,7 +75,7 @@ export default class App extends Component {
             <div className="jumbotron jumbotron-fluid">
               <div className="btn-group" role="group">
                 <button type="button" className="btn btn-sm btn-secondary">
-                  <a href="/">Home</a> <span className="badge badge-primary"></span>
+                  <a href="/"><i className="fas fa-home"></i></a> <span className="badge badge-primary"></span>
                 </button>
                 <button type="button" className="btn btn-sm btn-secondary">
                   Query <span className="badge badge-primary">{this.state.query}</span>
@@ -139,7 +139,7 @@ export default class App extends Component {
         </div>
         { this.state.entries.length > 0 && 
           <div className="main-content main-author">
-              Made by <a href="https://twitter.com/daviducolo">Davide Santangelo</a>. Source on <a href="https://github.com/davidesantangelo/feedi">GitHub</a>.
+              Made  by <a href="https://twitter.com/daviducolo">Davide Santangelo</a>. Source on <a href="https://github.com/davidesantangelo/feedi">GitHub <i className="fab fa-github"></i></a>.
           </div>
         }
 

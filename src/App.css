@@ -57,6 +57,22 @@ input:focus {
   padding-top: 25px
 }
 
+.fa-smile {
+  color: green
+}
+
+.fa-frown {
+  color: red
+}
+
+.fa-meh {
+  color: gray
+}
+
+.information button{
+  margin-right: 5px
+}
+
 .main-author a {
   color: #007bff
 }

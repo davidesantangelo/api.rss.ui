@@ -7,17 +7,16 @@ const Entry = props => {
   let sentimentClass = '';
 
   if (props.sentiment === 'positive') {
-    sentimentClass = 'success';
+    sentimentClass = 'far fa-smile';
   } else if (props.sentiment === 'negative') {
-    sentimentClass = 'danger';
+    sentimentClass = 'far fa-frown';
   } else {
-    sentimentClass = 'secondary';
+    sentimentClass = 'far fa-meh';
   }
 
   return(
     <div className="entry-box">
 
-      <span title={'sentiment: ' + props.sentiment + ', score: ' + props.sentiment_score} className={"badge badge-" + sentimentClass}>{props.sentiment}</span>
       <a href={props.url} rel="noopener noreferrer" target="_BLANK">{props.title}</a>
       <span className="url">
         <Truncate lines={1} ellipsis={<span>...</span>}>
@@ -34,8 +33,12 @@ const Entry = props => {
       <div className="date"><Moment date={props.timestamp * 1000} /></div>
 
       <div className="information">
-        <button className="btn btn-light btn-sm"><a href={props.feed} target="_BLANK" title={props.feed}>Visit Origin Feed</a></button>
-        
+        <button className="btn btn-light btn-sm"><a href={props.url} target="_BLANK" title={props.url}> <i className="fas fa-external-link-square-alt"></i></a></button>
+     
+        <button className="btn btn-light btn-sm"><a href={props.feed} target="_BLANK" title={props.feed}><i className="fas fa-rss"></i></a></button>
+        { props.sentiment &&
+          <button className="btn btn-light btn-sm"><a title={'sentiment: ' + props.sentiment + ', score: ' + props.sentiment_score}><i className={sentimentClass}></i></a></button>
+        }
       </div>            
 
       
