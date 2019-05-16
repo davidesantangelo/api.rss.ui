@@ -69,10 +69,6 @@ input:focus {
   color: gray
 }
 
-.information button{
-  margin-right: 5px
-}
-
 .main-author a {
   color: #007bff
 }
@@ -145,7 +141,7 @@ textarea:focus, input:focus{
 }
 
 .entry-list a {
-  display: block;
+
   margin: auto;
 }
 
@@ -209,6 +205,11 @@ textarea:focus, input:focus{
 .information {
   margin-top: 5px;
 }
+
+.information a{
+  margin-right: 5px
+}
+
 
 .url {
   color: darkgreen

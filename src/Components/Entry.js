@@ -17,7 +17,7 @@ const Entry = props => {
   return(
     <div className="entry-box">
 
-      <a href={props.url} rel="noopener noreferrer" target="_BLANK">{props.title}</a>
+      <a href={props.url} rel="noopener noreferrer" target="_BLANK">{props.title}</a><br></br>
       <span className="url">
         <Truncate lines={1} ellipsis={<span>...</span>}>
           {props.url}
@@ -33,15 +33,12 @@ const Entry = props => {
       <div className="date"><Moment date={props.timestamp * 1000} /></div>
 
       <div className="information">
-        <button className="btn btn-light btn-sm"><a href={props.url} target="_BLANK" title={props.url}> <i className="fas fa-external-link-square-alt"></i></a></button>
-     
-        <button className="btn btn-light btn-sm"><a href={props.feed} target="_BLANK" title={props.feed}><i className="fas fa-rss"></i></a></button>
+        <a className="btn btn-light btn-sm" href={props.url} target="_BLANK" title={props.url}> <i className="fas fa-external-link-square-alt"></i></a>
+        <a className="btn btn-light btn-sm" href={props.feed} target="_BLANK" title={props.feed}><i className="fas fa-rss"></i></a>
         { props.sentiment &&
-          <button className="btn btn-light btn-sm"><a title={'sentiment: ' + props.sentiment + ', score: ' + props.sentiment_score}><i className={sentimentClass}></i></a></button>
+          <a className="btn btn-light btn-sm" title={'sentiment: ' + props.sentiment + ', score: ' + props.sentiment_score}><i className={sentimentClass}></i></a>
         }
       </div>            
-
-      
     </div>
   );
 }
