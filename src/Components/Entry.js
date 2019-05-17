@@ -15,7 +15,7 @@ const Entry = props => {
   }
 
   let tags = props.tags.slice(0, 4).map((tag, key) =>
-    <span className="badge badge-secondary" key={tag}>#{tag}</span>
+    <a href={tag.uri} target="_BLANK"><span  title={tag.name} className="badge badge-secondary" key={tag.uri}>#{tag.spot}</span></a>
   );
   
   return(
