@@ -46,6 +46,8 @@ input:focus {
 .btn-light {
   font-size: 12px;
   border: 1px solid #dddddd;
+  border-radius: 4px;
+  padding: 3px 4px
 }
 
 .main-author {
@@ -162,7 +164,7 @@ textarea:focus, input:focus{
 
 .main-header {
   width: 100%;
-  min-height: 175px;
+  min-height: 184px;
   z-index: 700;
   padding-top: 30px;
   margin-bottom: 30px;
@@ -188,7 +190,7 @@ textarea:focus, input:focus{
 }
 
 .jumbotron {
-  padding: 0px;
+  padding: 0px 0 10px 0;
   background: #fff;
   margin: 0
 }
@@ -204,7 +206,6 @@ textarea:focus, input:focus{
 .information a {
   margin-right: 5px
 }
-
 
 .url {
   color: darkgreen
