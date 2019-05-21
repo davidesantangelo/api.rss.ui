@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import 'normalize.css'
+import 'sanitize.css'
 import './App.css';
 import axios from 'axios';
 import SearchForm from './Components/SearchForm';
