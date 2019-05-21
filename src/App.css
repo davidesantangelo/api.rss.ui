@@ -190,7 +190,7 @@ textarea:focus, input:focus{
 }
 
 .jumbotron {
-  padding: 0px 0 10px 0;
+  padding: 0px;
   background: #fff;
   margin: 0
 }
