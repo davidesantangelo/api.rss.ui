@@ -24,9 +24,7 @@ const Entry = props => {
       <div className="entry-box-head">
         <a href={props.url} rel="noopener noreferrer" target="_BLANK">{props.title}</a>
         <span className="url">
-          <Truncate lines={1} ellipsis={<span>...</span>}>
-            {props.url}
-          </Truncate>
+          {props.url}
         </span>
       </div>
 
@@ -35,12 +33,11 @@ const Entry = props => {
       </div>
       
       <div className="body">
-        <Truncate lines={3} ellipsis={<span>...</span>}>
+        <span className="date"><Moment fromNow date={props.timestamp * 1000} /></span> - <Truncate lines={3} ellipsis={<span>...</span>}>
             {props.text}
         </Truncate>
       </div>
-      
-      <div className="date"><Moment date={props.timestamp * 1000} /></div>
+    
 
       <div className="information">
         <a className="btn btn-light btn-sm" href={props.url} target="_BLANK" title={props.url}>URL <i className="fas fa-external-link-square-alt"></i></a>

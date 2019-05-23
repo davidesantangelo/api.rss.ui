@@ -11,7 +11,7 @@ body {
   color: #4c4c4c;
   margin: 0;
   background: #fcfcfc;
-  padding-bottom: 20px
+  padding-bottom: 20px;
 }
 
 a {
@@ -93,8 +93,6 @@ input:focus {
 }
 
 .date {
-  margin-top: 5px;
-  font-size: 14px;
   color: #777
 }
 
@@ -200,7 +198,7 @@ textarea:focus, input:focus{
 }
 
 .information {
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .information a {
