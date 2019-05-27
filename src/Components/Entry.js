@@ -39,11 +39,11 @@ const Entry = props => {
       </div>
     
 
-      <div className="information">
-        <a className="btn btn-light btn-sm" href={props.url} target="_BLANK" title={props.url}>URL <i className="fas fa-external-link-square-alt"></i></a>
-        <a className="btn btn-light btn-sm" href={props.feed} target="_BLANK" title={props.feed}>RSS <i className="fas fa-rss"></i></a>
+      <div className="actions">
+        <a className="btn btn-light btn-sm btn-action" href={props.url} target="_BLANK" title={props.url}>URL <i className="fas fa-external-link-square-alt"></i></a>
+        <a className="btn btn-light btn-sm btn-action" href={props.feed} target="_BLANK" title={props.feed}>RSS <i className="fas fa-rss"></i></a>
         { props.sentiment &&
-          <a className="btn btn-light btn-sm" title={'sentiment: ' + props.sentiment + ', score: ' + props.sentiment_score}>SENTIMENT <i className={sentimentClass}></i></a>
+          <a className="btn btn-light btn-sm btn-action" title={'sentiment: ' + props.sentiment + ', score: ' + props.sentiment_score}>SENTIMENT <i className={sentimentClass}></i></a>
         }
       </div>            
     </div>

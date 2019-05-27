@@ -141,7 +141,7 @@ export default class App extends Component {
         </div>
         { this.state.entries.length > 0 && 
           <div className="main-content main-author">
-              Made  by <a href="https://twitter.com/daviducolo">Davide Santangelo</a>. Source on <a href="https://github.com/davidesantangelo/feedi">GitHub <i className="fab fa-github-square"></i></a>.
+              made  by <a href="https://twitter.com/daviducolo">Davide Santangelo</a>. source on <a href="https://github.com/davidesantangelo/feedi">github <i className="fab fa-github"></i></a>, support on bmc <a href="https://www.buymeacoffee.com/582rhJH" target="_BLANK">buy me a coffee <i className="fas fa-coffee"></i></a>.
           </div>
         }
       </div>

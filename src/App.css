@@ -43,7 +43,7 @@ input:focus {
   border-radius: 0;
 }
 
-.btn-light {
+.btn-action {
   font-size: 12px;
   border: 1px solid #dddddd;
   border-radius: 4px;
@@ -197,11 +197,11 @@ textarea:focus, input:focus{
   margin-right: 5px
 }
 
-.information {
+.actions {
   margin-top: 10px;
 }
 
-.information a {
+.actions a {
   margin-right: 5px
 }
 
