@@ -50,6 +50,12 @@ input:focus {
   padding: 3px 4px
 }
 
+.badge-tag {
+  background: #aaaaaa;
+  color: #fff;
+  border-radius: 2px
+}
+
 .main-author {
   padding-top: 25px
 }
@@ -107,10 +113,6 @@ input:focus {
   border: 0;
   background-color: none;
   background: none;
-}
-
-.badge {
-  border-radius: 0;
 }
 
 .search-form input {
@@ -213,8 +215,20 @@ textarea:focus, input:focus{
   margin-bottom: 50px;
 }
 
-.entry-box-head a {
-  display: block
+.entry-box-head {
+  display: inline-block;
+}
+
+.entry-box-head span.feed-rank {
+  padding: 2px 8px;
+  color: #ffffff;
+  border-radius: 4px;
+  background: #ffc107;
+  font-size: 12px;
+}
+
+.entry-box-head span.url{
+  display: block;
 }
 
 .entry-tags span {

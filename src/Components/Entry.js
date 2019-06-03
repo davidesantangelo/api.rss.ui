@@ -15,14 +15,14 @@ const Entry = props => {
   }
 
   let tags = props.tags.slice(0, 4).map((tag, key) =>
-    <a href={tag.uri} key={tag.uri} target="_BLANK" rel="noopener noreferrer"><span title={tag.label} className="badge badge-secondary">#{tag.label}</span></a>
+    <a href={tag.uri} key={tag.uri} target="_BLANK" rel="noopener noreferrer"><span title={tag.label} className="badge badge-light badge-tag">#{tag.label}</span></a>
   );
   
   return(
     <div className="entry-box">
 
       <div className="entry-box-head">
-        <a href={props.url} rel="noopener noreferrer" target="_BLANK">{props.title}</a>
+        <span title={'feed rank: ' + props.feed.title} className="feed-rank">{props.feed.rank}</span> <a href={props.url} rel="noopener noreferrer" target="_BLANK">{props.title}</a>
         <span className="url">
           {props.url}
         </span>
@@ -41,7 +41,7 @@ const Entry = props => {
 
       <div className="actions">
         <a className="btn btn-light btn-sm btn-action" href={props.url} target="_BLANK" rel="noopener noreferrer" title={props.url}>URL <i className="fas fa-external-link-square-alt"></i></a>
-        <a className="btn btn-light btn-sm btn-action" href={props.feed} target="_BLANK" rel="noopener noreferrer" title={props.feed}>RSS <i className="fas fa-rss"></i></a>
+        <a className="btn btn-light btn-sm btn-action" href={props.feed.url} target="_BLANK" rel="noopener noreferrer" title={props.feed.title}>RSS <i className="fas fa-rss"></i></a>
         { props.sentiment &&
           <a className="btn btn-light btn-sm btn-action" title={'sentiment: ' + props.sentiment + ', score: ' + props.sentiment_score}>SENTIMENT <i className={sentimentClass}></i></a>
         }
