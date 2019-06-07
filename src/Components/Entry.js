@@ -22,7 +22,7 @@ const Entry = props => {
     <div className="entry-box">
 
       <div className="entry-box-head">
-        <span title={'feed rank: ' + props.feed.title} className="feed-rank">{props.feed.rank}</span> <a href={props.url} rel="noopener noreferrer" target="_BLANK">{props.title}</a>
+        <span title={'feed rank: ' + props.feed.rank} className="feed-rank">{props.feed.rank}</span> <a href={props.url} rel="noopener noreferrer" target="_BLANK">{props.title}</a>
         <span className="url">
           {props.url}
         </span>
