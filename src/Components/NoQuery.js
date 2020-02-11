@@ -25,7 +25,7 @@ const NoQuery = props => {
   return (
     <div>
       <h5>Search entries or whatever you want to search (news, sports, economy). For developers <a target="_BLANK" rel="noopener noreferrer" href="https://github.com/davidesantangelo/feedi">API</a>.</h5>
-      <p><br></br><a href={url}><button type="button" className="btn btn-primary">choose for me <i className="fas fa-random"></i></button></a> <a href="/?q=blackfriday"><button type="button" className="btn btn-warning">black friday rss<i className="fas fa-shopping-cart"></i></button></a></p> 
+      <p><br></br><a href={url}><button type="button" className="btn btn-primary">choose for me <i className="fas fa-random"></i></button></a> <a href="https://www.buymeacoffee.com/582rhJH"><button type="button" className="btn btn-warning">buy me a coffee<i className="fas fa-coffee"></i></button></a></p> 
       <p></p> 
     </div>
   );
