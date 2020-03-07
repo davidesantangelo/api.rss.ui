@@ -5,18 +5,15 @@ const NoQuery = props => {
   let queries = [
     'news',
     'sports',
-    'facebook',
-    'youtube',
     'amazon',
-    'instagram',
     'weather',
     'finance',
     'entertainment',
     'economy',
-    'netflix',
     'f1',
     'space',
-    'politics'
+    'politics',
+    'health'
   ]
 
   let query = queries[Math.floor(Math.random() * queries.length)];
