@@ -3,6 +3,8 @@ import Moment from 'react-moment';
 import 'moment-timezone';
 import Truncate from 'react-truncate';
 
+var moment = require('moment');
+
 const Entry = props => {
   let sentimentClass = '';
 
@@ -33,7 +35,7 @@ const Entry = props => {
       </div>
       
       <div className="body">
-        <span className="date"><Moment fromNow date={props.timestamp * 1000} /></span> - <Truncate lines={3} ellipsis={<span>...</span>}>
+        <span className="date">{moment.unix(props.timestamp).fromNow()}</span> - <Truncate lines={3} ellipsis={<span>...</span>}>
             {props.text}
         </Truncate>
       </div>
