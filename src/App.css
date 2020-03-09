@@ -218,7 +218,7 @@ textarea:focus, input:focus{
 
 .entry-box-head a {
   color: #ffffff;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 .entry-box-head {
@@ -230,7 +230,7 @@ textarea:focus, input:focus{
   color: #ffffff;
   border-radius: 1px;
   background: #ffc107;
-  font-size: 1em
+  font-size: 0.9em
 }
 
 .entry-box-head span.url{
