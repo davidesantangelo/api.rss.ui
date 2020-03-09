@@ -10,7 +10,7 @@ body {
   font: 1em/1.5 'Roboto', sans-serif;
   color: #bbbbbb;
   margin: 0;
-  background: #111111;
+  background: #0D1219;
   padding-bottom: 20px;
   font-weight: 400;
 }
@@ -47,8 +47,8 @@ input:focus {
 .btn-action {
   font-size: 12px;
   border: 1px solid #dddddd;
-  border-radius: 4px;
-  padding: 3px 4px
+  border-radius: 2px;
+  padding: 1px 4px
 }
 
 .badge-tag {
@@ -80,7 +80,7 @@ input:focus {
 .main-info .jumbotron{
   width: 90%;
   margin: 0 5%;
-  background: #222222;
+  background: #0D1219;
 }
 
 .page-item.active .page-link {
@@ -169,7 +169,7 @@ textarea:focus, input:focus{
   z-index: 700;
   padding-top: 30px;
   margin-bottom: 30px;
-  background: #222222;
+  background: #0D1219;
   border-bottom: 2px solid #cccccc
 }
 
@@ -193,7 +193,7 @@ textarea:focus, input:focus{
 .jumbotron {
   padding: 0px;
   margin: 0;
-  background: #222222;
+  background: #0D1219;
 }
 
 .jumbotron button {
@@ -218,6 +218,7 @@ textarea:focus, input:focus{
 
 .entry-box-head a {
   color: #ffffff;
+  font-size: 1.1em;
 }
 
 .entry-box-head {
@@ -225,11 +226,11 @@ textarea:focus, input:focus{
 }
 
 .entry-box-head span.feed-rank {
-  padding: 2px 8px;
+  padding: 4px 8px;
   color: #ffffff;
-  border-radius: 4px;
+  border-radius: 1px;
   background: #ffc107;
-  font-size: 12px;
+  font-size: 1em
 }
 
 .entry-box-head span.url{
@@ -242,7 +243,9 @@ textarea:focus, input:focus{
 
 .body {
   word-wrap: break-word;
-  font-size: 14px;
+  font-size: 15px;
+  text-align: justify;
+  color: #bbbbbb
 }
 
 /* ================================= 
