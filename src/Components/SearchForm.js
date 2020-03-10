@@ -36,6 +36,7 @@ export default class SearchForm extends Component {
                onChange={this.onSearchChange}
                name="search" 
                ref={(input) => this.query = input}
+               autoFocus="true"
                placeholder="What are you looking for?" />
       
       </form>      

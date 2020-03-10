@@ -1,5 +1,4 @@
 import React from 'react';
-import Moment from 'react-moment';
 import 'moment-timezone';
 import Truncate from 'react-truncate';
 

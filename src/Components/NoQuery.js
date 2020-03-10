@@ -21,8 +21,8 @@ const NoQuery = props => {
 
   return (
     <div>
-      <h5>Search entries or whatever you want to search (news, sports, economy). For developers <a target="_BLANK" rel="noopener noreferrer" href="https://github.com/davidesantangelo/feedi">API</a>.</h5>
-      <p><br></br><a href='/?q=coronavirus&page=1'><button type="button" className="btn btn-danger">Covid19 <i className="fas fa-heartbeat"></i></button></a> <a href={url}><button type="button" className="btn btn-primary">choose for me <i className="fas fa-random"></i></button></a> <a href="https://www.buymeacoffee.com/582rhJH"><button type="button" className="btn btn-warning">buy me a coffee<i className="fas fa-coffee"></i></button></a></p> 
+      <h5>Search entries or whatever you want to search (news, sports, economy). Take a look at the RESTful <a target="_BLANK" rel="noopener noreferrer" href="https://github.com/davidesantangelo/feedi">API</a>.</h5>
+      <p><br></br><a href='/?q=coronavirus&page=1'><button type="button" className="btn btn-danger">Covid19 <i className="fas fa-heartbeat"></i></button></a> <a href={url}><button type="button" className="btn btn-primary">random <i className="fas fa-random"></i></button></a></p> 
       <p></p> 
     </div>
   );
