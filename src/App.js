@@ -94,30 +94,7 @@ export default class App extends Component {
              
               </div>
 
-              { this.state.entries.length > 0 && 
-                   <div className="btn-group float-right" role="group">
-                    <ReactPaginate
-                        previousLabel={'prev'}
-                        nextLabel={'next'}
-                        breakLabel={'...'}
-                        forcePage={this.state.currentPage - 1}
-                        pageClassName={'page-item'}
-                        pageLinkClassName={'page-link'}
-                        breakClassName={'break-me'}
-                        pageCount={this.state.total / this.state.perPage}
-                        marginPagesDisplayed={0}
-                        onPageChange={this.handlePageClick}
-                        pageRangeDisplayed={0}
-                        containerClassName={'pagination pagination-sm'}
-                        subContainerClassName={'pages pagination'}
-                        activeClassName={'active'}
-                        previousClassName={'page-item'}
-                        nextClassName={'page-item'}
-                        previousLinkClassName={'page-link'}
-                        nextLinkClassName={'page-link'}
-                      /> 
-                  </div>
-                }
+              
 
             </div>
           
@@ -136,6 +113,31 @@ export default class App extends Component {
              : <div>
               
               <EntryList data={this.state.entries} query={this.state.query}/>
+
+              { this.state.entries.length > 0 && 
+                <div className="btn-group" role="group">
+                  <ReactPaginate
+                      previousLabel={'prev'}
+                      nextLabel={'next'}
+                      breakLabel={'...'}
+                      forcePage={this.state.currentPage - 1}
+                      pageClassName={'page-item'}
+                      pageLinkClassName={'page-link'}
+                      breakClassName={'break-me'}
+                      pageCount={this.state.total / this.state.perPage}
+                      marginPagesDisplayed={3}
+                      onPageChange={this.handlePageClick}
+                      pageRangeDisplayed={3}
+                      containerClassName={'pagination pagination-sm'}
+                      subContainerClassName={'pages pagination'}
+                      activeClassName={'active'}
+                      previousClassName={'page-item'}
+                      nextClassName={'page-item'}
+                      previousLinkClassName={'page-link'}
+                      nextLinkClassName={'page-link'}
+                    /> 
+                </div>
+              }
               </div>
           }     
         </div>
@@ -143,6 +145,8 @@ export default class App extends Component {
           <div className="main-content main-author">
             Made by <a href="https://twitter.com/daviducolo">Davide Santangelo</a>. Source on <a href="https://github.com/davidesantangelo/datorss">github <i className="fab fa-github"></i></a>, support on bmc <a href="https://www.buymeacoffee.com/582rhJH" target="_BLANK" rel="noopener noreferrer">buy me a coffee <i className="fas fa-coffee"></i></a>.
           </div>
+
+
         }
       </div>
     );

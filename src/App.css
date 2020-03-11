@@ -57,6 +57,10 @@ input:focus {
   border-radius: 2px
 }
 
+.main-author {
+  padding-top: 45px
+}
+
 .fa-smile {
   color: green
 }
