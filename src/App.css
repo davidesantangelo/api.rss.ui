@@ -8,7 +8,7 @@
 
 body {
   font: 1em/1.5 'Roboto', sans-serif;
-  color: gray;
+  color: rgba(0,0,0,.65);
   margin: 0;
   background: #fcfcfc;
   padding-bottom: 20px;
@@ -115,12 +115,12 @@ input:focus {
   margin: 10px 0;
   height: 60px;
   line-height: 40px;
-  border: 1px solid #bbbbbb;
+  border: 1px solid #cccccc;
   border-radius: 2px;
   font-size: 22px;
   font-weight: 200;
   padding: 15px;
-  color: gray;
+  color: #000000;
 }
 
 textarea:focus, input:focus{
@@ -160,12 +160,12 @@ textarea:focus, input:focus{
 
 .main-header {
   width: 100%;
-  min-height: 184px;
+  min-height: 234px;
   z-index: 700;
   padding-top: 30px;
   margin-bottom: 30px;
   background: #ffffff;
-  border-bottom: 1px solid #cccccc
+  border-bottom: 1px solid #eee
 }
 
 .main-content::after {

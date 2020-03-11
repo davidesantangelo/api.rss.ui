@@ -69,7 +69,8 @@ export default class App extends Component {
       <div>
         
         <div className="main-header">
-          <div className="inner">
+        <div className="inner">
+          <h2>DatoRSS</h2>
             <SearchForm onSearch={this.performSearch} query={this.state.query} />      
           </div>   
           <div className="main-info">
