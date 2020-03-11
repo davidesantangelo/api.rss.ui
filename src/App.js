@@ -76,22 +76,48 @@ export default class App extends Component {
          
             <div className="jumbotron jumbotron-fluid">
               <div className="btn-group" role="group">
-                <button type="button" className="btn btn-sm btn-secondary">
+                <button type="button" className="btn btn-sm btn-primary">
                   <a href="/"><i className="fas fa-home"></i></a> <span className="badge badge-primary"></span>
                 </button>
-                <button type="button" className="btn btn-sm btn-secondary">
+                <button type="button" className="btn btn-sm btn-light">
                   Query <span className="badge badge-primary">{this.state.query}</span>
                 </button>
-                <button type="button" className="btn btn-sm btn-secondary">
+                <button type="button" className="btn btn-sm btn-light">
                   Total <span className="badge badge-primary">{this.state.total}</span>
                 </button>
-                <button type="button" className="btn btn-sm btn-secondary">
+                <button type="button" className="btn btn-sm btn-light">
                   Per Page <span className="badge badge-primary">{this.state.perPage}</span>
                 </button>
-                <button type="button" className="btn btn-sm btn-secondary">
+                <button type="button" className="btn btn-sm btn-light">
                   Current Page <span className="badge badge-primary">{this.state.currentPage}</span>
-                </button>
+                </button>             
+             
               </div>
+
+              { this.state.entries.length > 0 && 
+                   <div className="btn-group float-right" role="group">
+                    <ReactPaginate
+                        previousLabel={'prev'}
+                        nextLabel={'next'}
+                        breakLabel={'...'}
+                        forcePage={this.state.currentPage - 1}
+                        pageClassName={'page-item'}
+                        pageLinkClassName={'page-link'}
+                        breakClassName={'break-me'}
+                        pageCount={this.state.total / this.state.perPage}
+                        marginPagesDisplayed={0}
+                        onPageChange={this.handlePageClick}
+                        pageRangeDisplayed={0}
+                        containerClassName={'pagination pagination-sm'}
+                        subContainerClassName={'pages pagination'}
+                        activeClassName={'active'}
+                        previousClassName={'page-item'}
+                        nextClassName={'page-item'}
+                        previousLinkClassName={'page-link'}
+                        nextLinkClassName={'page-link'}
+                      /> 
+                  </div>
+                }
 
             </div>
           
@@ -110,38 +136,12 @@ export default class App extends Component {
              : <div>
               
               <EntryList data={this.state.entries} query={this.state.query}/>
-              <div className="main-footer">
-              { this.state.entries.length > 0 && 
-                <div className="jumbotron jumbotron-fluid">
-                  <ReactPaginate
-                      previousLabel={'prev'}
-                      nextLabel={'next'}
-                      breakLabel={'...'}
-                      forcePage={this.state.currentPage - 1}
-                      pageClassName={'page-item'}
-                      pageLinkClassName={'page-link'}
-                      breakClassName={'break-me'}
-                      pageCount={this.state.total / this.state.perPage}
-                      marginPagesDisplayed={2}
-                      onPageChange={this.handlePageClick}
-                      pageRangeDisplayed={5}
-                      containerClassName={'pagination pagination-sm'}
-                      subContainerClassName={'pages pagination'}
-                      activeClassName={'active'}
-                      previousClassName={'page-item'}
-                      nextClassName={'page-item'}
-                      previousLinkClassName={'page-link'}
-                      nextLinkClassName={'page-link'}
-                    /> 
-                  </div>
-                }
-                </div>
               </div>
           }     
         </div>
         { this.state.entries.length > 0 && 
           <div className="main-content main-author">
-              made  by <a href="https://twitter.com/daviducolo">Davide Santangelo</a>. source on <a href="https://github.com/davidesantangelo/datorss">github <i className="fab fa-github"></i></a>, support on bmc <a href="https://www.buymeacoffee.com/582rhJH" target="_BLANK"  rel="noopener noreferrer">buy me a coffee <i className="fas fa-coffee"></i></a>.
+            Made by <a href="https://twitter.com/daviducolo">Davide Santangelo</a>. Source on <a href="https://github.com/davidesantangelo/datorss">github <i className="fab fa-github"></i></a>, support on bmc <a href="https://www.buymeacoffee.com/582rhJH" target="_BLANK" rel="noopener noreferrer">buy me a coffee <i className="fas fa-coffee"></i></a>.
           </div>
         }
       </div>

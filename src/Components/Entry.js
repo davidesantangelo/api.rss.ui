@@ -44,7 +44,7 @@ const Entry = props => {
         <a className="btn btn-light btn-sm btn-action" href={props.url} target="_BLANK" rel="noopener noreferrer" title={props.url}>URL <i className="fas fa-external-link-square-alt"></i></a>
         <a className="btn btn-light btn-sm btn-action" href={props.feed.url} target="_BLANK" rel="noopener noreferrer" title={props.feed.title}>RSS <i className="fas fa-rss"></i></a>
         { props.sentiment &&
-          <a className="btn btn-light btn-sm btn-action" title={'sentiment: ' + props.sentiment + ', score: ' + props.sentiment_score}><i className={sentimentClass}></i></a>
+          <a href="/" className="btn btn-light btn-sm btn-action" title={'sentiment: ' + props.sentiment + ', score: ' + props.sentiment_score}><i className={sentimentClass}></i></a>
         }
       </div>            
     </div>

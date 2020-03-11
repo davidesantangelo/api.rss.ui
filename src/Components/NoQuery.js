@@ -5,8 +5,6 @@ const NoQuery = props => {
   let queries = [
     'news',
     'sports',
-    'amazon',
-    'weather',
     'finance',
     'entertainment',
     'economy',

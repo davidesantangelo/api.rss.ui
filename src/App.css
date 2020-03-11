@@ -8,9 +8,9 @@
 
 body {
   font: 1em/1.5 'Roboto', sans-serif;
-  color: #bbbbbb;
+  color: gray;
   margin: 0;
-  background: #0D1219;
+  background: #fcfcfc;
   padding-bottom: 20px;
   font-weight: 400;
 }
@@ -57,10 +57,6 @@ input:focus {
   border-radius: 2px
 }
 
-.main-author {
-  padding-top: 25px
-}
-
 .fa-smile {
   color: green
 }
@@ -80,14 +76,13 @@ input:focus {
 .main-info .jumbotron{
   width: 90%;
   margin: 0 5%;
-  background: #0D1219;
+  background: #fcfcfc;
 }
 
 .page-item.active .page-link {
   z-index: 1;
   color: #fff;
-  background-color: #000000;
-  border-color: #000000;  
+  background-color: #007bff;
 }
 
 .main-footer {
@@ -103,15 +98,12 @@ input:focus {
   color: #777
 }
 
-
-
 .page-item.disabled .page-link {
   background-color: none !important;
 }
 .page-link, .page-item {
-  border: 0;
-  background-color: none;
-  background: none;
+  color: #6c757d;
+  border-radius: 0;
 }
 
 .search-form input {
@@ -124,8 +116,7 @@ input:focus {
   font-size: 22px;
   font-weight: 200;
   padding: 15px;
-  background: #000000;
-  color: #ffffff;
+  color: gray;
 }
 
 textarea:focus, input:focus{
@@ -169,8 +160,8 @@ textarea:focus, input:focus{
   z-index: 700;
   padding-top: 30px;
   margin-bottom: 30px;
-  background: #0D1219;
-  border-bottom: 2px solid #cccccc
+  background: #ffffff;
+  border-bottom: 1px solid #cccccc
 }
 
 .main-content::after {
@@ -193,7 +184,7 @@ textarea:focus, input:focus{
 .jumbotron {
   padding: 0px;
   margin: 0;
-  background: #0D1219;
+  background: #fcfcfc;
 }
 
 .jumbotron button {
@@ -217,7 +208,6 @@ textarea:focus, input:focus{
 }
 
 .entry-box-head a {
-  color: #ffffff;
   font-size: 1em;
 }
 
@@ -245,7 +235,7 @@ textarea:focus, input:focus{
   word-wrap: break-word;
   font-size: 15px;
   text-align: justify;
-  color: #bbbbbb
+  color: rgba(0,0,0,.65)
 }
 
 /* ================================= 
