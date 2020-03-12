@@ -77,31 +77,25 @@ export default class App extends Component {
          
             <div className="jumbotron jumbotron-fluid">
               <div className="btn-group" role="group">
-                <button type="button" className="btn btn-sm btn-primary">
+                <button type="button" className="btn btn-sm btn-dark">
                   <a href="/"><i className="fas fa-home"></i></a> <span className="badge badge-primary"></span>
                 </button>
-                <button type="button" className="btn btn-sm btn-light">
-                  q <span className="badge badge-primary">{this.state.query ? this.state.query : 'blank'}</span>
+                <button type="button" className="btn btn-sm btn-dark">
+                  q <span className="badge badge-light">{this.state.query ? this.state.query : 'blank'}</span>
                 </button>
-                <button type="button" className="btn btn-sm btn-light">
-                  tot <span className="badge badge-primary">{this.state.total}</span>
+                <button type="button" className="btn btn-sm btn-dark">
+                  tot <span className="badge badge-light">{this.state.total}</span>
                 </button>
-                <button type="button" className="btn btn-sm btn-light">
-                  per page <span className="badge badge-primary">{this.state.perPage}</span>
+                <button type="button" className="btn btn-sm btn-dark">
+                  per page <span className="badge badge-light">{this.state.perPage}</span>
                 </button>
-                <button type="button" className="btn btn-sm btn-light">
-                  current page <span className="badge badge-primary">{this.state.currentPage}</span>
+                <button type="button" className="btn btn-sm btn-dark">
+                  current page <span className="badge badge-light">{this.state.currentPage}</span>
                 </button>             
              
               </div>
-
-              
-
             </div>
-          
-          
           </div>
-       
         </div>
       
         <div className="main-content">
