@@ -81,16 +81,16 @@ export default class App extends Component {
                   <a href="/"><i className="fas fa-home"></i></a> <span className="badge badge-primary"></span>
                 </button>
                 <button type="button" className="btn btn-sm btn-light">
-                  Query <span className="badge badge-primary">{this.state.query}</span>
+                  q <span className="badge badge-primary">{this.state.query ? this.state.query : 'blank'}</span>
                 </button>
                 <button type="button" className="btn btn-sm btn-light">
-                  Total <span className="badge badge-primary">{this.state.total}</span>
+                  tot <span className="badge badge-primary">{this.state.total}</span>
                 </button>
                 <button type="button" className="btn btn-sm btn-light">
-                  Per Page <span className="badge badge-primary">{this.state.perPage}</span>
+                  per page <span className="badge badge-primary">{this.state.perPage}</span>
                 </button>
                 <button type="button" className="btn btn-sm btn-light">
-                  Current Page <span className="badge badge-primary">{this.state.currentPage}</span>
+                  current page <span className="badge badge-primary">{this.state.currentPage}</span>
                 </button>             
              
               </div>
