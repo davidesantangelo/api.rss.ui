@@ -142,7 +142,7 @@ export default class App extends Component {
           </div>
         }
 
-        { this.state.entries.length == 0 && 
+        { !this.state.loading && this.state.entries.length == 0 && 
           <div className="main-content main-footer">
             ©2019-2020 — DatoRSS made by <a href="https://twitter.com/daviducolo">Davide Santangelo</a>.
           </div>
