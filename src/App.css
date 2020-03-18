@@ -61,6 +61,12 @@ input:focus {
   padding-top: 45px
 }
 
+.main-footer {
+  position: absolute;
+  bottom: 0px;
+  margin: 0 auto;
+}
+
 .fa-smile {
   color: green
 }
@@ -115,7 +121,7 @@ input:focus {
   margin: 10px 0;
   height: 60px;
   line-height: 40px;
-  border: 1px solid #cccccc;
+  border: 1px solid #bbbbbb;
   border-radius: 2px;
   font-size: 22px;
   font-weight: 200;
