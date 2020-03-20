@@ -61,12 +61,6 @@ input:focus {
   padding-top: 45px
 }
 
-.main-footer {
-  position: absolute;
-  bottom: 0px;
-  margin: 0 auto;
-}
-
 .fa-smile {
   color: green
 }
@@ -96,8 +90,10 @@ input:focus {
 }
 
 .main-footer {
-  width: 100%;
   min-height: 40px;
+  position: absolute;
+  bottom: 0px;
+  margin: 0 auto;
 }
 
 .btn-group button a {
@@ -261,6 +257,12 @@ textarea:focus, input:focus{
   .inner,.main-content {
     width: 90%;
     margin: auto
+  }
+
+  .main-footer {
+    width: 90%;
+    left: 5%;
+    right: 5%;
   }
 
   .main-info .jumbotron {
