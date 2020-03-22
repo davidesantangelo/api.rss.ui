@@ -120,9 +120,9 @@ export default class App extends Component {
                       pageLinkClassName={'page-link'}
                       breakClassName={'break-me'}
                       pageCount={this.state.total / this.state.perPage}
-                      marginPagesDisplayed={3}
+                      marginPagesDisplayed={2}
                       onPageChange={this.handlePageClick}
-                      pageRangeDisplayed={3}
+                      pageRangeDisplayed={2}
                       containerClassName={'pagination pagination-sm'}
                       subContainerClassName={'pages pagination'}
                       activeClassName={'active'}
@@ -138,13 +138,13 @@ export default class App extends Component {
         </div>
         { this.state.entries.length > 0 && 
           <div className="main-content main-author">
-            Made by <a href="https://twitter.com/daviducolo">Davide Santangelo</a>. Source on <a href="https://github.com/davidesantangelo/datorss">github <i className="fab fa-github"></i></a>, support on bmc <a href="https://www.buymeacoffee.com/582rhJH" target="_BLANK" rel="noopener noreferrer">buy me a coffee <i className="fas fa-coffee"></i></a>.
+            Made by <a href="https://davidesantangelo.com">Davide Santangelo</a>. Source on <a href="https://github.com/davidesantangelo/datorss">github <i className="fab fa-github"></i></a>, support on bmc <a href="https://www.buymeacoffee.com/582rhJH" target="_BLANK" rel="noopener noreferrer">buy me a coffee <i className="fas fa-coffee"></i></a>.
           </div>
         }
 
         { !this.state.loading && this.state.entries.length == 0 && 
           <div className="main-content main-footer">
-            ©2019-2020 — DatoRSS made by <a href="https://twitter.com/daviducolo">Davide Santangelo</a>.
+            Made by <a href="https://davidesantangelo.com" target="_BLANK">Davide Santangelo</a>.
           </div>
         } 
       </div>
