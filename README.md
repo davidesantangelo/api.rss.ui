@@ -10,7 +10,7 @@ www.datorss.com
 
 ## Buy me a coffee
 
-If you want to support me in server costs to leave Feedi online, consider buying me a coffee! Thanks!
+If you want to support me in server costs, consider buying me a coffee! Thanks!
 
 <a href="https://www.buymeacoffee.com/582rhJH" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
