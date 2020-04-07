@@ -102,8 +102,8 @@ export default class App extends Component {
           
           {
             (this.state.loading)
-             ? <div className="spinner-grow text-primary" role="status">
-                <span className="sr-only">Loading...</span>
+             ? <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
               </div>
              : <div>
               
