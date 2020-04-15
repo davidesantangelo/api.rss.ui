@@ -6,13 +6,14 @@
   box-sizing: border-box;
 }
 
-body {
+html,body {
   font: 1em/1.5 'Roboto', sans-serif;
   color: rgba(0,0,0,.65);
   margin: 0;
   background: #fcfcfc;
   padding-bottom: 20px;
   font-weight: 400;
+  height: 100%;
 }
 
 a {
@@ -80,7 +81,7 @@ input:focus {
 .main-info .jumbotron{
   width: 90%;
   margin: 0 5%;
-  background: #fcfcfc;
+  background: #222222;
 }
 
 .page-item.active .page-link {
@@ -115,10 +116,10 @@ input:focus {
 .search-form input {
   width: 100%;
   margin: 10px 0;
-  height: 60px;
+  height: 50px;
   line-height: 40px;
-  border: 1px solid #bbbbbb;
-  border-radius: 2px;
+  border: 1px solid #cccccc;
+  border-radius: 0px;
   font-size: 22px;
   font-weight: 200;
   padding: 15px;
@@ -166,7 +167,8 @@ textarea:focus, input:focus{
   z-index: 700;
   padding-top: 30px;
   margin-bottom: 30px;
-  background: #ffffff;
+  background: #222222;
+  color: #ffffff;
   border-bottom: 1px solid #eee
 }
 

@@ -70,32 +70,50 @@ export default class App extends Component {
         
         <div className="main-header">
         <div className="inner">
-          <h2>DatoRSS</h2>
+          <h2>DatoRSS   <i className="fas fa-rss"></i></h2>
             <SearchForm onSearch={this.performSearch} query={this.state.query} />      
           </div>   
+          { this.state.entries.length > 0
+          ?
           <div className="main-info">
          
             <div className="jumbotron jumbotron-fluid">
               <div className="btn-group" role="group">
-                <button type="button" className="btn btn-sm btn-dark">
-                  <a href="/"><i className="fas fa-home"></i></a> <span className="badge badge-primary"></span>
+                <button type="button" className="btn btn-sm btn-secondary">
+                  <a href="/"><i className="fas fa-home"></i></a>
                 </button>
-                <button type="button" className="btn btn-sm btn-dark">
-                  q <span className="badge badge-light">{this.state.query ? this.state.query : 'blank'}</span>
+                <button type="button" className="btn btn-sm btn-light">
+                  q <span className="badge badge-dark">{this.state.query ? this.state.query : 'blank'}</span>
                 </button>
-                <button type="button" className="btn btn-sm btn-dark">
-                  tot <span className="badge badge-light">{this.state.total}</span>
+                <button type="button" className="btn btn-sm btn-light">
+                  tot <span className="badge badge-dark">{this.state.total}</span>
                 </button>
-                <button type="button" className="btn btn-sm btn-dark">
-                  per page <span className="badge badge-light">{this.state.perPage}</span>
+                <button type="button" className="btn btn-sm btn-light">
+                  per page <span className="badge badge-dark">{this.state.perPage}</span>
                 </button>
-                <button type="button" className="btn btn-sm btn-dark">
-                  current page <span className="badge badge-light">{this.state.currentPage}</span>
+                <button type="button" className="btn btn-sm btn-light">
+                  current page <span className="badge badge-dark">{this.state.currentPage}</span>
                 </button>             
              
               </div>
             </div>
+            
           </div>
+          :
+            <div className="main-info">
+                <div className="jumbotron jumbotron-fluid">
+                  <div className="btn-group" role="group" aria-label="Basic example">
+                    <a href='/?q=coronavirus&page=1'className="btn btn-sm btn-danger">Covid19 <i className="fas fa-heartbeat"></i></a>  &nbsp;
+                    <a href='/?q=news&page=1' className="btn btn-sm btn-secondary">news <i className="far fa-newspaper"></i></a>  &nbsp;
+                    <a href='/?q=sports&page=1' className="btn btn-sm btn-secondary">sports <i className="fas fa-baseball-ball"></i></a>  &nbsp;
+                    <a href='/?q=finance&page=1' className="btn btn-sm btn-secondary">finance <i className="fas fa-wallet"></i></a>  &nbsp;
+                    <a href='/?q=health&page=1' className="btn btn-sm btn-secondary">health <i className="fas fa-file-medical"></i></a>  &nbsp;
+
+                  </div>
+                </div>
+            
+            </div>
+          }
         </div>
       
         <div className="main-content">
@@ -138,13 +156,13 @@ export default class App extends Component {
         </div>
         { this.state.entries.length > 0 && 
           <div className="main-content main-author">
-            Made by <a href="https://davidesantangelo.com">Davide Santangelo</a>. Source on <a href="https://github.com/davidesantangelo/datorss">github <i className="fab fa-github"></i></a>, support on bmc <a href="https://www.buymeacoffee.com/582rhJH" target="_BLANK" rel="noopener noreferrer">buy me a coffee <i className="fas fa-coffee"></i></a>.
+            creator <a href="https://davidesantangelo.com">davidesantangelo.com</a> | code <a href="https://github.com/davidesantangelo/datorss">github</a> | donate <a href="https://www.buymeacoffee.com/582rhJH" target="_BLANK" rel="noopener noreferrer">buy me a coffee</a>
           </div>
         }
 
         { !this.state.loading && this.state.entries.length == 0 && 
           <div className="main-content main-footer">
-            Made by <a href="https://davidesantangelo.com" target="_BLANK">Davide Santangelo</a>.
+            creator <a href="https://davidesantangelo.com">davidesantangelo.com</a> | code <a href="https://github.com/davidesantangelo/datorss">github</a> | donate <a href="https://www.buymeacoffee.com/582rhJH" target="_BLANK" rel="noopener noreferrer">buy me a coffee</a>
           </div>
         } 
       </div>
