@@ -6,14 +6,13 @@
   box-sizing: border-box;
 }
 
-html,body {
+body {
   font: 1em/1.5 'Roboto', sans-serif;
   color: rgba(0,0,0,.65);
   margin: 0;
   background: #fcfcfc;
   padding-bottom: 20px;
   font-weight: 400;
-  height: 100%;
 }
 
 a {
