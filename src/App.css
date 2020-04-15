@@ -80,7 +80,7 @@ input:focus {
 .main-info .jumbotron{
   width: 90%;
   margin: 0 5%;
-  background: #222222;
+  background: #2b3a42;
 }
 
 .page-item.active .page-link {
@@ -166,7 +166,7 @@ textarea:focus, input:focus{
   z-index: 700;
   padding-top: 30px;
   margin-bottom: 30px;
-  background: #222222;
+  background: #2b3a42;
   color: #ffffff;
   border-bottom: 1px solid #eee
 }

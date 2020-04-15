@@ -23,6 +23,7 @@ const NoQuery = props => {
       <p>
       <h5>Fast, Awesome, Clean and Powerful RSS search engine, browse through over <strong>800,000</strong> RSS posts. </h5>
       </p>
+      <a className="btn btn-dark" href="https://github.com/davidesantangelo/feedi" target="_BLANK">RESTful API <i className="fas fa-code"></i></a>
     </div>
   );
   
