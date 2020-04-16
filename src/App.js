@@ -79,19 +79,19 @@ export default class App extends Component {
          
             <div className="jumbotron jumbotron-fluid">
               <div className="btn-group" role="group">
-                <button type="button" className="btn btn-sm btn-secondary">
+                <button type="button" title="home" className="btn btn-sm btn-secondary">
                   <a href="/"><i className="fas fa-home"></i></a>
                 </button>
-                <button type="button" className="btn btn-sm btn-light">
+                <button type="button" title="query" className="btn btn-sm btn-light">
                   q <span className="badge badge-dark">{this.state.query ? this.state.query : 'blank'}</span>
                 </button>
-                <button type="button" className="btn btn-sm btn-light">
+                <button type="button" title="total" className="btn btn-sm btn-light">
                   tot <span className="badge badge-dark">{this.state.total}</span>
                 </button>
-                <button type="button" className="btn btn-sm btn-light">
+                <button type="button" title="result per page" className="btn btn-sm btn-light">
                   per page <span className="badge badge-dark">{this.state.perPage}</span>
                 </button>
-                <button type="button" className="btn btn-sm btn-light">
+                <button type="button" title="current page" className="btn btn-sm btn-light">
                   current page <span className="badge badge-dark">{this.state.currentPage}</span>
                 </button>             
              
@@ -120,8 +120,8 @@ export default class App extends Component {
           
           {
             (this.state.loading)
-             ? <div class="spinner-border" role="status">
-                <span class="sr-only">Loading...</span>
+             ? <div className="spinner-border text-secondary" role="status">
+                <span className="sr-only">Loading...</span>
               </div>
              : <div>
               
@@ -156,13 +156,13 @@ export default class App extends Component {
         </div>
         { this.state.entries.length > 0 && 
           <div className="main-content main-author">
-            creator <a href="https://davidesantangelo.com">davidesantangelo.com</a> | code <a href="https://github.com/davidesantangelo/datorss">github</a> | donate <a href="https://www.buymeacoffee.com/582rhJH" target="_BLANK" rel="noopener noreferrer">buy me a coffee</a>
+            creator <a title="Davide Santangelo" href="https://davidesantangelo.com">davidesantangelo.com</a> | code <a href="https://github.com/davidesantangelo/datorss">github</a> | donate <a href="https://www.buymeacoffee.com/582rhJH" target="_BLANK" rel="noopener noreferrer">buy me a coffee</a>
           </div>
         }
 
         { !this.state.loading && this.state.entries.length === 0 && 
           <div className="main-content main-footer">
-            creator <a href="https://davidesantangelo.com">davidesantangelo.com</a> | code <a href="https://github.com/davidesantangelo/datorss">github</a> | donate <a href="https://www.buymeacoffee.com/582rhJH" target="_BLANK" rel="noopener noreferrer">buy me a coffee</a>
+            creator <a title="Davide Santangelo" href="https://davidesantangelo.com">davidesantangelo.com</a> | code <a href="https://github.com/davidesantangelo/datorss">github</a> | donate <a href="https://www.buymeacoffee.com/582rhJH" target="_BLANK" rel="noopener noreferrer">buy me a coffee</a>
           </div>
         } 
       </div>

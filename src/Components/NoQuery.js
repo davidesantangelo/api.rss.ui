@@ -3,6 +3,7 @@ import React from 'react';
 const NoQuery = props => {
   return (
     <div>
+      <br></br>
       <h5><strong>DatoRSS – RSS Search Engine</strong></h5>
       <p>
       <h5>Fast, Awesome, Clean and Powerful RSS search engine, browse through over <strong>800,000</strong> RSS posts. </h5>
