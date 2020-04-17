@@ -70,7 +70,7 @@ export default class App extends Component {
         
         <div className="main-header">
           <div className="github-star">
-            <a className="github-button" href="https://github.com/davidesantangelo/feedirss-api" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star davidesantangelo/feedirss-api on GitHub"></a>
+            <a className="github-button" href="https://github.com/davidesantangelo/feedirss-api" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star davidesantangelo/feedirss-api on GitHub">GitHub</a>
           </div>
         <div className="inner">
           <h2>DatoRSS   <i className="fas fa-rss"></i></h2>

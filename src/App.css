@@ -308,3 +308,7 @@ textarea:focus, input:focus{
   top: 25px;
   right: 25px
 }
+
+.github-star a {
+  color: #ffffff
+}
