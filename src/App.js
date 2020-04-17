@@ -37,7 +37,7 @@ export default class App extends Component {
     query = parsed.q
    
     if (query) {
-      axios.get(`https://static.86.148.203.116.clients.your-server.de/search/entries?q=${query}&page=${page}`)
+      axios.get(`https://api.feedirss.com/search/entries?q=${query}&page=${page}`)
         .then(response => {
           
           this.setState({
