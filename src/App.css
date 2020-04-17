@@ -1,6 +1,7 @@
 /* ================================= 
   Element Styles
 ==================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100italic,100);
 
 * {
   box-sizing: border-box;
@@ -300,4 +301,10 @@ textarea:focus, input:focus{
   .entry-list li:nth-of-type(3n+1) {
     clear: left;
   }
+}
+
+.github-star {
+  position: absolute;
+  top: 25px;
+  right: 25px
 }
