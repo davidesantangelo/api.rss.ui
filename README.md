@@ -2,7 +2,7 @@
 
 # DatoRSS Search Engine
 
-small application developed in ReactJS that uses the API provided by [Feedi](https://github.com/davidesantangelo/feedi)
+small application developed in ReactJS that uses the API provided by [FeediRSS API](https://github.com/davidesantangelo/feedirss-api)
 
 ## Live
 
