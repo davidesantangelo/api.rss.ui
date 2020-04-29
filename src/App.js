@@ -159,13 +159,13 @@ export default class App extends Component {
         </div>
         { this.state.entries.length > 0 && 
           <div className="main-content main-author">
-            creator <a title="Davide Santangelo" href="https://davidesantangelo.com">davidesantangelo.com</a> | code <a href="https://github.com/davidesantangelo/datorss">github</a> | donate <a href="https://www.buymeacoffee.com/582rhJH" target="_BLANK" rel="noopener noreferrer">buy me a coffee</a>
+            creator <a title="Davide Santangelo" href="https://davidesantangelo.com">davidesantangelo.com</a> | code <a href="https://github.com/davidesantangelo/datorss">github</a> | donate <a href="https://www.buymeacoffee.com/582rhJH" target="_BLANK" rel="noopener noreferrer">bmc</a>
           </div>
         }
 
         { !this.state.loading && this.state.entries.length === 0 && 
           <div className="main-content main-footer">
-            creator <a title="Davide Santangelo" href="https://davidesantangelo.com">davidesantangelo.com</a> | code <a href="https://github.com/davidesantangelo/datorss">github</a> | donate <a href="https://www.buymeacoffee.com/582rhJH" target="_BLANK" rel="noopener noreferrer">buy me a coffee</a>
+            creator <a title="Davide Santangelo" href="https://davidesantangelo.com">davidesantangelo.com</a> | code <a href="https://github.com/davidesantangelo/datorss">github</a> | donate <a href="https://www.buymeacoffee.com/582rhJH" target="_BLANK" rel="noopener noreferrer">bmc</a>
           </div>
         } 
       </div>
