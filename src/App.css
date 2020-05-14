@@ -298,13 +298,3 @@ textarea:focus, input:focus{
     clear: left;
   }
 }
-
-.github-star {
-  position: absolute;
-  top: 25px;
-  right: 25px
-}
-
-.github-star a {
-  color: #ffffff
-}

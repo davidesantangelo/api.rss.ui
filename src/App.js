@@ -69,39 +69,36 @@ export default class App extends Component {
       <div>
         
         <div className="main-header">
-          <div className="github-star">
-            <a className="github-button" href="https://github.com/davidesantangelo/feedirss-api" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star davidesantangelo/feedirss-api on GitHub">GitHub</a>
-          </div>
         <div className="inner">
           <h2>DatoRSS   <i className="fas fa-rss"></i></h2>
             <SearchForm onSearch={this.performSearch} query={this.state.query} />      
           </div>   
           { this.state.entries.length > 0
           ?
-          <div className="main-info">
-         
-            <div className="jumbotron jumbotron-fluid">
-              <div className="btn-group" role="group">
-                <button type="button" title="home" className="btn btn-sm btn-secondary">
-                  <a href="/"><i className="fas fa-home"></i></a>
-                </button>
-                <button type="button" title="query" className="btn btn-sm btn-light">
-                  q <span className="badge badge-dark">{this.state.query ? this.state.query : 'blank'}</span>
-                </button>
-                <button type="button" title="total" className="btn btn-sm btn-light">
-                  tot <span className="badge badge-dark">{this.state.total}</span>
-                </button>
-                <button type="button" title="result per page" className="btn btn-sm btn-light">
-                  per page <span className="badge badge-dark">{this.state.perPage}</span>
-                </button>
-                <button type="button" title="current page" className="btn btn-sm btn-light">
-                  current page <span className="badge badge-dark">{this.state.currentPage}</span>
-                </button>             
-             
+            <div className="main-info">
+          
+              <div className="jumbotron jumbotron-fluid">
+                <div className="btn-group" role="group">
+                  <button type="button" title="home" className="btn btn-sm btn-secondary">
+                    <a href="/"><i className="fas fa-home"></i></a>
+                  </button>
+                  <button type="button" title="query" className="btn btn-sm btn-light">
+                    q <span className="badge badge-dark">{this.state.query ? this.state.query : 'blank'}</span>
+                  </button>
+                  <button type="button" title="total" className="btn btn-sm btn-light">
+                    tot <span className="badge badge-dark">{this.state.total}</span>
+                  </button>
+                  <button type="button" title="result per page" className="btn btn-sm btn-light">
+                    per page <span className="badge badge-dark">{this.state.perPage}</span>
+                  </button>
+                  <button type="button" title="current page" className="btn btn-sm btn-light">
+                    current page <span className="badge badge-dark">{this.state.currentPage}</span>
+                  </button>             
+              
+                </div>
               </div>
+              
             </div>
-            
-          </div>
           :
             <div className="main-info">
                 <div className="jumbotron jumbotron-fluid">
