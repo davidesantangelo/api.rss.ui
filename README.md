@@ -1,4 +1,4 @@
-# DatoRSS — :warning: This project is no longer maintained!!!! :warning:
+# API.RSS.UI — :warning: This project is no longer maintained!!!! :warning:
 
 ### Since this project is no longer maintained, please consider using the new project [davideasntangelo/dato.rss](https://github.com/davidesantangelo/dato.rss)!
 
@@ -15,7 +15,7 @@ npm install, npm start
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/davidesantangelo/datorss. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/davidesantangelo/api.rss.ui. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
