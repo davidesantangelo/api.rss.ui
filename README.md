@@ -1,12 +1,7 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6d1bf226-d4fb-40b5-9186-216b956b8538/deploy-status)](https://app.netlify.com/sites/boring-bose-6492dd/deploys)
+# DatoRSS — :warning: This project is no longer maintained!!!! :warning:
 
-# DatoRSS Search Engine
+### Since this project is no longer maintained, please consider using the new project [davideasntangelo/dato.rss](https://github.com/davideasntangelo/dato.rss)!
 
-small application developed in ReactJS that uses the API provided by [FeediRSS API](https://github.com/davidesantangelo/feedirss-api)
-
-## Live
-
-www.datorss.com
 
 ## Buy me a coffee
 
