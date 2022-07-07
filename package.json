@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "moment-timezone": "^0.5.28",
     "normalize.css": "^8.0.1",
     "query-string": "^6.11.1",
