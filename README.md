@@ -1,6 +1,6 @@
 # API.RSS.UI — :warning: This project is no longer maintained!!!! :warning:
 
-### Since this project is no longer maintained, please consider using the new project [davideasntangelo/dato.rss](https://github.com/davidesantangelo/dato.rss)!
+### Since this project is no longer maintained, please consider using the new project [davidesantangelo/dato.rss](https://github.com/davidesantangelo/dato.rss)!
 
 
 ## Buy me a coffee
